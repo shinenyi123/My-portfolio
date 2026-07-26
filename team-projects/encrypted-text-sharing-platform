@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Project Detail | Encrypted Text Sharing Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body>
+    <div id="progress-bar"></div>
+    <div class="loading-screen">
+        <div class="loader"></div>
+    </div>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="brand"><span class="brand-mark"><i class="fa-solid fa-code"></i></span>
+                Portfolio</a>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle"><i class="fa-solid fa-moon"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="detail-page container">
+        <section class="detail-hero reveal glass-card">
+            <div class="detail-hero-grid">
+                <div class="detail-hero-content">
+                    <div class="section-title"><i class="fa-solid fa-shield-halved"></i> Team Project</div>
+                    <h1 class="section-heading">Encrypted Text Sharing Platform</h1>
+                    <p class="section-copy">A secure web application that allows users to encrypt, store, and share
+                        sensitive text content with confidence. The platform combines authentication, custom
+                        encryption, and modern web architecture to create a dependable sharing experience.</p>
+                    <div class="hero-metrics">
+                        <span class="metric-pill"><i class="fa-solid fa-lock"></i> Secure Sharing</span>
+                        <span class="metric-pill"><i class="fa-solid fa-database"></i> PostgreSQL</span>
+                        <span class="metric-pill"><i class="fa-solid fa-rocket"></i> Railway Deployment</span>
+                    </div>
+                    <div class="card-actions">
+                        <a class="btn btn-primary"
+                            href="https://encrypted-text-sharing-platform-production.up.railway.app/"><i
+                                class="fa-solid fa-globe"></i> Live Demo</a>
+                        <a class="btn btn-secondary"
+                            href="https://github.com/Team-Projects-ShineCompy/encrypted-text-sharing-platform"><i
+                                class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-highlights glass-card">
+                    <h3><i class="fa-solid fa-chart-line"></i> Project Snapshot</h3>
+                    <ul class="detail-list">
+                        <li><span>Project Name</span><strong>Encrypted Text Sharing Platform</strong></li>
+                        <li><span>Team Name</span><strong>CodeTogether</strong></li>
+                        <li><span>My Role</span><strong>Team Leader</strong></li>
+                        <li><span>Stack</span><strong>HTML, CSS, JS, Python, Flask, PostgreSQL</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="detail-grid reveal">
+            <div class="detail-card glass-card">
+                <div class="section-title"><i class="fa-solid fa-users"></i> Team Information</div>
+                <h3>Team Name: CodeTogether</h3>
+                <p><strong>My Role:</strong> Team Leader</p>
+                <p class="section-copy">I led planning, architecture decisions, and integration while coordinating the
+                    overall delivery of the platform.</p>
+            </div>
+
+            <div class="detail-card glass-card">
+                <div class="section-title"><i class="fa-solid fa-list-check"></i> My Responsibilities</div>
+                <ul class="detail-list bullets">
+                    <li>Planned the overall system architecture.</li>
+                    <li>Designed the PostgreSQL database schema and relationships.</li>
+                    <li>Designed and implemented a custom text encryption and decryption algorithm from scratch.</li>
+                    <li>Developed frontend and backend modules using HTML, CSS, JavaScript, Python, and Flask.</li>
+                    <li>Integrated APIs, database operations, and secure file-sharing features.</li>
+                    <li>Tested, debugged, optimized, and deployed the application.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="reveal">
+            <div class="section-heading-row">
+                <div class="section-title"><i class="fa-solid fa-diagram-project"></i> Software Lifecycle</div>
+                <h2 class="section-heading">Development Process</h2>
+            </div>
+            <div class="timeline-grid">
+                <article class="timeline-card glass-card">
+                    <span class="timeline-step">01</span>
+                    <h3>Requirements & Architecture</h3>
+                    <p>Planned the project requirements and mapped the system architecture for a secure, scalable
+                        experience.</p>
+                </article>
+                <article class="timeline-card glass-card">
+                    <span class="timeline-step">02</span>
+                    <h3>Database Design</h3>
+                    <p>Defined the PostgreSQL schema and established the relationships for users and shared files.</p>
+                </article>
+                <article class="timeline-card glass-card">
+                    <span class="timeline-step">03</span>
+                    <h3>Encryption Implementation</h3>
+                    <p>Built a custom encryption and decryption flow tailored for secure text handling.</p>
+                </article>
+                <article class="timeline-card glass-card">
+                    <span class="timeline-step">04</span>
+                    <h3>Frontend & Backend Development</h3>
+                    <p>Implemented the user interface and Flask-powered backend modules for the complete workflow.</p>
+                </article>
+                <article class="timeline-card glass-card">
+                    <span class="timeline-step">05</span>
+                    <h3>Integration & Testing</h3>
+                    <p>Integrated the components, validated the flows, and resolved issues across the application.</p>
+                </article>
+                <article class="timeline-card glass-card">
+                    <span class="timeline-step">06</span>
+                    <h3>Deployment & Validation</h3>
+                    <p>Deployed the service and performed post-launch checks to ensure reliability and stability.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="reveal">
+            <div class="section-heading-row">
+                <div class="section-title"><i class="fa-solid fa-star"></i> Product Highlights</div>
+                <h2 class="section-heading">Key Features</h2>
+            </div>
+            <div class="feature-grid">
+                <article class="feature-card glass-card">
+                    <div class="icon-pill"><i class="fa-solid fa-user-check"></i></div>
+                    <h3>User Authentication</h3>
+                    <p>Secure access and identity control for protected content sharing.</p>
+                </article>
+                <article class="feature-card glass-card">
+                    <div class="icon-pill"><i class="fa-solid fa-lock"></i></div>
+                    <h3>Custom Encryption</h3>
+                    <p>Built-in encryption and decryption workflows designed for text confidentiality.</p>
+                </article>
+                <article class="feature-card glass-card">
+                    <div class="icon-pill"><i class="fa-solid fa-share-nodes"></i></div>
+                    <h3>Secure File Sharing</h3>
+                    <p>Supported sharing flows for protected documents and text exchange.</p>
+                </article>
+                <article class="feature-card glass-card">
+                    <div class="icon-pill"><i class="fa-solid fa-folder-open"></i></div>
+                    <h3>File Management</h3>
+                    <p>Organized handling of stored content with structured access points.</p>
+                </article>
+                <article class="feature-card glass-card">
+                    <div class="icon-pill"><i class="fa-solid fa-database"></i></div>
+                    <h3>PostgreSQL Database</h3>
+                    <p>Reliable relational storage for users, files, and shared records.</p>
+                </article>
+                <article class="feature-card glass-card">
+                    <div class="icon-pill"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                    <h3>Responsive Design</h3>
+                    <p>Accessible layout experience across desktop and mobile devices.</p>
+                </article>
+                <article class="feature-card glass-card">
+                    <div class="icon-pill"><i class="fa-solid fa-moon"></i></div>
+                    <h3>Dark / Light Theme</h3>
+                    <p>Visual theme switching that remains consistent with the portfolio style.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="detail-grid reveal">
+            <div class="detail-card glass-card">
+                <div class="section-title"><i class="fa-solid fa-sitemap"></i> System Architecture</div>
+                <div class="architecture-diagram">
+                    <div class="arch-node"><i class="fa-solid fa-user"></i> User</div>
+                    <div class="arch-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                    <div class="arch-node"><i class="fa-solid fa-laptop"></i> Frontend</div>
+                    <div class="arch-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                    <div class="arch-node"><i class="fa-solid fa-server"></i> Flask Backend</div>
+                    <div class="arch-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                    <div class="arch-node"><i class="fa-solid fa-shield-halved"></i> Authentication</div>
+                    <div class="arch-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                    <div class="arch-node"><i class="fa-solid fa-key"></i> Encryption Module</div>
+                    <div class="arch-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                    <div class="arch-node"><i class="fa-solid fa-database"></i> PostgreSQL</div>
+                    <div class="arch-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                    <div class="arch-node"><i class="fa-solid fa-paper-plane"></i> Response</div>
+                </div>
+            </div>
+
+            <div class="detail-card glass-card">
+                <div class="section-title"><i class="fa-solid fa-layer-group"></i> Technology Stack</div>
+                <div class="stack-group">
+                    <div class="stack-card">
+                        <h4>Frontend</h4>
+                        <div class="badge-row">
+                            <span class="badge-pill">HTML</span>
+                            <span class="badge-pill">CSS</span>
+                            <span class="badge-pill">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="stack-card">
+                        <h4>Backend</h4>
+                        <div class="badge-row">
+                            <span class="badge-pill">Python</span>
+                            <span class="badge-pill">Flask</span>
+                        </div>
+                    </div>
+                    <div class="stack-card">
+                        <h4>Database</h4>
+                        <div class="badge-row">
+                            <span class="badge-pill">PostgreSQL</span>
+                        </div>
+                    </div>
+                    <div class="stack-card">
+                        <h4>Deployment</h4>
+                        <div class="badge-row">
+                            <span class="badge-pill">Railway</span>
+                        </div>
+                    </div>
+                    <div class="stack-card">
+                        <h4>Version Control</h4>
+                        <div class="badge-row">
+                            <span class="badge-pill">Git</span>
+                            <span class="badge-pill">GitHub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="detail-grid reveal">
+            <div class="detail-card glass-card">
+                <div class="section-title"><i class="fa-solid fa-sitemap"></i> Database Design</div>
+                <div class="erd-diagram">
+                    <div class="erd-node primary">
+                        <h4>Users</h4>
+                        <span>id, name, email</span>
+                    </div>
+                    <div class="erd-connector"><i class="fa-solid fa-arrows-left-right"></i></div>
+                    <div class="erd-node">
+                        <h4>Files</h4>
+                        <span>id, owner_id, content</span>
+                    </div>
+                    <div class="erd-connector"><i class="fa-solid fa-arrows-left-right"></i></div>
+                    <div class="erd-node">
+                        <h4>Received Files</h4>
+                        <span>id, sender_id, recipient_id</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail-card glass-card">
+                <div class="section-title"><i class="fa-solid fa-triangle-exclamation"></i> Challenges</div>
+                <div class="pill-list">
+                    <span class="pill-card">Migrated from SQLite to PostgreSQL</span>
+                    <span class="pill-card">Designed a custom encryption algorithm</span>
+                    <span class="pill-card">Integrated frontend and backend modules</span>
+                    <span class="pill-card">Implemented secure file sharing</span>
+                    <span class="pill-card">Deployed the application</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="detail-grid reveal">
+            <div class="detail-card glass-card">
+                <div class="section-title"><i class="fa-solid fa-graduation-cap"></i> Lessons Learned</div>
+                <div class="pill-list">
+                    <span class="pill-card">REST API Design</span>
+                    <span class="pill-card">Database Design</span>
+                    <span class="pill-card">Backend Development</span>
+                    <span class="pill-card">Git Collaboration</span>
+                    <span class="pill-card">Deployment</span>
+                    <span class="pill-card">Security Concepts</span>
+                </div>
+            </div>
+
+            <div class="detail-card glass-card">
+                <div class="section-title"><i class="fa-solid fa-forward"></i> Future Improvements</div>
+                <div class="pill-list">
+                    <span class="pill-card">Real-time Messaging</span>
+                    <span class="pill-card">End-to-End Encryption</span>
+                    <span class="pill-card">File Upload Support</span>
+                    <span class="pill-card">Notification System</span>
+                    <span class="pill-card">Admin Dashboard</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <a href="#" id="backToTop" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
