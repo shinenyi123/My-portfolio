@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Premium software developer portfolio with projects, team work, and strong backend engineering focus." />
+  <meta name="keywords" content="software developer, python developer, backend developer, portfolio" />
+  <title>Software Developer | Premium Portfolio</title>
+  <link rel="icon" href="images/koshine.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body>
+  <div id="progress-bar"></div>
+  <div class="cursor-glow"></div>
+  <div class="loading-screen">
+    <div class="loader"></div>
+  </div>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="#home" class="brand">
+        <span class="brand-mark"><i class="fa-solid fa-code"></i></span>
+        <span>Developer</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Personal Projects</a></li>
+        <li><a href="#team-projects">Team Projects</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#github">GitHub</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i
+            class="fa-solid fa-moon"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="home">
+    <section class="hero container">
+      <div class="hero-grid">
+        <div class="hero-intro reveal">
+          <div class="badge"><i class="fa-solid fa-sparkles"></i><span>Student Portfolio</span></div>
+          <h1 class="hero-title">Crafting <span class="accent">secure</span>, reliable, and high-impact software.</h1>
+          <p class="hero-subtitle">I am a software developer passionate about backend systems, automation, AI, machine
+            learning, and building products that solve real problems with clarity and precision.</p>
+          <div class="typing-text" id="typedText">Software Developer</div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects"><i class="fa-solid fa-diagram-project"></i> View Projects</a>
+            <a class="btn btn-secondary" href="#contact"><i class="fa-solid fa-paper-plane"></i> Contact Me</a>
+            <a class="btn btn-secondary" href="assets/resume.txt" download><i class="fa-solid fa-download"></i> Download
+              Resume</a>
+          </div>
+          <div class="socials">
+            <a href="https://github.com" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:hello@portfolio.dev"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="hero-card glass-card">
+            <div class="glow-ring"></div>
+            <img class="hero-photo" src="images/koshine.jpg" alt="Professional portrait" />
+            <div class="particles"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats-grid reveal">
+        <div class="stat-card glass-card">
+          <div class="stat-value" data-count="3" data-suffix="">0</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-card glass-card">
+          <div class="stat-value" data-count="8" data-suffix="">0</div>
+          <div class="stat-label">Technologies Learned</div>
+        </div>
+        <div class="stat-card glass-card">
+          <div class="stat-value" data-count="3" data-suffix="">0</div>
+          <div class="stat-label">GitHub Repositories</div>
+        </div>
+        <div class="stat-card glass-card">
+          <div class="stat-value" data-count="800" data-suffix="+">0</div>
+          <div class="stat-label">Hours of Coding</div>
+        </div>
+        <div class="stat-card glass-card">
+          <div class="stat-value" data-count="1" data-suffix="">0</div>
+          <div class="stat-label">Years Learning Programming</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container">
+      <div class="section-title reveal">About Me</div>
+      <h2 class="section-heading reveal">Building software with purpose, structure, and long-term value.</h2>
+      <p class="section-copy reveal">My journey started with curiosity and grew into a deep passion for problem solving,
+        system design, and dependable engineering. I enjoy translating ideas into reliable products that help users and
+        teams move faster.</p>
+      <div class="about-grid">
+        <div class="about-card glass-card reveal">
+          <div class="icon-pill"><i class="fa-solid fa-user-astronaut"></i></div>
+          <h3>Who I Am</h3>
+          <p>I am a software developer driven by clean architecture, thoughtful implementation, and a strong engineering
+            mindset. My work is grounded in reliability, clarity, and maintainability.</p>
+        </div>
+        <div class="about-card glass-card reveal">
+          <div class="icon-pill"><i class="fa-solid fa-route"></i></div>
+          <h3>My Journey</h3>
+          <p>My programming path has included Python, web technologies, backend development, databases, APIs, and
+            increasingly system design and AI-oriented engineering.</p>
+        </div>
+        <div class="about-card glass-card reveal">
+          <div class="icon-pill"><i class="fa-solid fa-brain"></i></div>
+          <h3>What I Care About</h3>
+          <p>I am especially interested in backend development, artificial intelligence, machine learning, API design,
+            and thoughtful system architecture.</p>
+        </div>
+        <div class="about-card glass-card reveal">
+          <div class="icon-pill"><i class="fa-solid fa-rocket"></i></div>
+          <h3>My Goal</h3>
+          <p>I aim to build software that feels secure, useful, and resilient while remaining elegant and approachable
+            for both users and teams.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="container">
+      <div class="section-title reveal">Skills</div>
+      <h2 class="section-heading reveal">Technical stack and growth areas.</h2>
+      <p class="section-copy reveal">A focused blend of practical experience and continuous learning, with strong
+        fundamentals in backend development and modern web engineering.</p>
+      <div class="skills-grid">
+        <div class="skill-card glass-card reveal">
+          <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+          <h3>Python</h3>
+          <p>Core backend logic, automation, scripting, and data-driven applications.</p>
+          <div class="progress-track">
+            <div class="progress-fill" style="width: 92%"></div>
+          </div>
+        </div>
+        <div class="skill-card glass-card reveal">
+          <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+          <h3>HTML</h3>
+          <p>Semantic structure and reusable, accessible page layouts.</p>
+          <div class="progress-track">
+            <div class="progress-fill" style="width: 88%"></div>
+          </div>
+        </div>
+        <div class="skill-card glass-card reveal">
+          <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>
+          <h3>CSS</h3>
+          <p>Modern styling, responsive design, and polished UI systems.</p>
+          <div class="progress-track">
+            <div class="progress-fill" style="width: 86%"></div>
+          </div>
+        </div>
+        <div class="skill-card glass-card reveal">
+          <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+          <h3>JavaScript</h3>
+          <p>Dynamic interactions, animation, and front-end functionality.</p>
+          <div class="progress-track">
+            <div class="progress-fill" style="width: 80%"></div>
+          </div>
+        </div>
+        <div class="skill-card glass-card reveal">
+          <div class="skill-icon"><i class="fa-solid fa-fire"></i></div>
+          <h3>Flask</h3>
+          <p>Lightweight backend development with modular API creation.</p>
+          <div class="progress-track">
+            <div class="progress-fill" style="width: 84%"></div>
+          </div>
+        </div>
+        <div class="skill-card glass-card reveal">
+          <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+          <h3>SQLite</h3>
+          <p>Reliable local data storage for smaller production-grade systems.</p>
+          <div class="progress-track">
+            <div class="progress-fill" style="width: 78%"></div>
+          </div>
+        </div>
+        <div class="skill-card glass-card reveal">
+          <div class="skill-icon"><i class="fa-brands fa-github"></i></div>
+          <h3>Git & GitHub</h3>
+          <p>Version control, collaboration, review practices, and team workflows.</p>
+          <div class="progress-track">
+            <div class="progress-fill" style="width: 90%"></div>
+          </div>
+        </div>
+        <div class="skill-card glass-card reveal">
+          <div class="skill-icon"><i class="fa-solid fa-robot"></i></div>
+          <h3>Learning</h3>
+          <p>Machine Learning, Artificial Intelligence, System Design, and API Development.</p>
+          <div class="progress-track">
+            <div class="progress-fill" style="width: 70%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="container">
+      <div class="filter-bar reveal">
+        <div>
+          <div class="section-title">Personal Projects</div>
+          <h2 class="section-heading">Selected projects built with care and direction.</h2>
+        </div>
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input id="projectSearch" type="text" placeholder="Search projects" />
+        </div>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="python">Python</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="ai">AI</button>
+        </div>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card glass-card reveal" data-category="web">
+          <img class="card-image" src="team-projects/images/Student.png" alt="web assistant interface" />
+          <h3>Student Management System</h3>
+          <p>A web-based student data management system built with Flask that helps schools efficiently manage, filter,
+            analyze, and export student information.</p>
+          <div class="badges">
+            <span class="badge-pill">Python</span>
+            <span class="badge-pill">Flask</span>
+            <span class="badge-pill">SQLite</span>
+            <span class="badge-pill">Html</span>
+            <span class="badge-pill">CSS</span>
+          </div>
+          <div class="card-actions">
+            <a class="btn btn-secondary" href="https://github.com/shinenyi123/student-dashboard"><i
+                class="fa-brands fa-github"></i> GitHub</a>
+            <a class="btn btn-secondary" href="https://student-dashboard-1-mmdm.onrender.com/"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+            <a class="btn btn-primary" href="projects/student-management-system.html"><i
+                class="fa-solid fa-arrow-right"></i> Read
+              More</a>
+          </div>
+          <!--</article>
+        <article class="project-card glass-card reveal" data-category="web">
+          <img class="card-image" src="images/kophone.jpg" alt="Personal dashboard" />
+          <h3>Developer Dashboard</h3>
+          <p>A polished web dashboard focused on project tracking, task visibility, and performance reporting.</p>
+          <div class="badges"><span class="badge-pill">HTML</span><span class="badge-pill">CSS</span><span
+              class="badge-pill">JavaScript</span></div>
+          <div class="card-actions">
+            <a class="btn btn-secondary" href="#"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a class="btn btn-secondary" href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+            <a class="btn btn-primary" href="projects/ai-assistant.html"><i class="fa-solid fa-arrow-right"></i> Read
+              More</a>
+          </div>
+        </article>-->
+      </div>
+    </section>
+
+    <section id="team-projects" class="container">
+      <div class="section-title reveal">Team Projects</div>
+      <h2 class="section-heading reveal">Collaborative work built through disciplined execution.</h2>
+      <div class="team-projects-grid">
+        <article class="team-card glass-card reveal">
+          <img class="card-image" src="team-projects/images/encrypted-text-sharing-platform.png"
+            alt="Team project showcase" />
+          <h3>Encrypted Text Sharing Platform</h3>
+          <p><strong>Team:</strong> CodeTogether</p>
+          <p><strong>My Role:</strong> Team Leader</p>
+          <p>Led the development team in designing and building a secure encrypted text-sharing platform, coordinating
+            backend development, database architecture, and system integration.</p>
+          <div class="badges">
+            <span class="badge-pill">Flask</span>
+            <span class="badge-pill">Html</span>
+            <span class="badge-pill">Css</span>
+            <span class="badge-pill">JavaScript</span>
+            <span class="badge-pill">Python</span>
+            <span class="badge-pill">psycopg2</span>
+            <span class="badge-pill">System Design</span>
+            <span class="badge-pill">Database Design</span>
+            <span class="badge-pill">API Design</span>
+            <span class="badge-pill">Method:(Encryption,Decryption)</span>
+          </div>
+          <div class="card-actions">
+            <a class="btn btn-secondary" href="https://encrypted-text-sharing-platform-production.up.railway.app/"><i
+                class="fa-solid fa-globe"></i> Team Website</a>
+            <a class="btn btn-secondary"
+              href="https://github.com/Team-Projects-ShineCompy/encrypted-text-sharing-platform"><i
+                class="fa-brands fa-github"></i> GitHub</a>
+            <a class="btn btn-primary" href="team-projects/encrypted-text-sharing-platform.html"><i
+                class="fa-solid fa-arrow-right"></i>
+              Read More</a>
+          </div>
+        </article>
+        <!--<article class="team-card glass-card reveal">
+          <img class="card-image" src="images/komoe.jpg" alt="Project architecture" />
+          <h3>Pulse Operations Suite</h3>
+          <p><strong>Team:</strong> Layered Labs</p>
+          <p><strong>My Role:</strong> Backend Lead</p>
+          <p>A product suite that combines monitoring workflows, user roles, and service integration.</p>
+          <div class="badges"><span class="badge-pill">Python</span><span class="badge-pill">API</span><span
+              class="badge-pill">Git</span></div>
+          <div class="card-actions">
+            <a class="btn btn-secondary" href="https://coruscating-muffin-2682d4.netlify.app/"><i
+                class="fa-solid fa-globe"></i> Team
+              Website</a>
+            <a class="btn btn-secondary" href="#"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a class="btn btn-primary" href="team-projects/nebula-platform.html"><i class="fa-solid fa-arrow-right"></i>
+              Read More</a>
+          </div>
+        </article>-->
+      </div>
+    </section>
+
+    <section id="team" class="container">
+      <div class="section-title reveal">Team</div>
+      <h2 class="section-heading reveal">A focused team culture centered on quality and momentum.</h2>
+      <div class="team-hero">
+        <div class="glass-card reveal" style="padding:1.5rem;">
+          <img class="team-logo" src="images/koshine.jpg" alt="Team logo" />
+          <h3>Nova Systems Collective</h3>
+          <p class="section-copy">Our mission is to build dependable systems, create strong engineering habits, and ship
+            solutions that people can trust. Our vision is to grow into a team known for thoughtful delivery and lasting
+            impact.</p>
+          <div class="card-actions">
+            <a class="btn btn-primary" href="https://coruscating-muffin-2682d4.netlify.app/"><i
+                class="fa-solid fa-globe"></i> Visit Team Website</a>
+            <a class="btn btn-secondary" href="https://github.com/Team-Projects-ShineCompy"><i
+                class="fa-brands fa-github"></i> GitHub Organization</a>
+          </div>
+        </div>
+        <div class="glass-card reveal" style="padding:1.5rem;">
+          <div class="section-title">My Position</div>
+          <h3>TEAM LEADER</h3>
+          <p>I lead planning, backend implementation, database design, system architecture, code reviews, and technical
+            coordination across the team.</p>
+          <div class="badges">
+            <span class="badge-pill">Project Planning</span><span class="badge-pill">Backend Development</span><span
+              class="badge-pill">Database Design</span>
+            <span class="badge-pill">System Design</span><span class="badge-pill">GitHub Management</span><span
+              class="badge-pill">Code Review</span>
+          </div>
+        </div>
+      </div>
+      <div class="team-members-grid" style="margin-top:1rem;">
+        <div class="member-card glass-card reveal">
+          <div class="avatar">
+            <img src="images/komoe.jpg" alt="Ko Moe" />
+          </div>
+          <h3>Ko Moe</h3>
+          <p>Frontend Engineer</p>
+        </div>
+        <div class="member-card glass-card reveal">
+          <div class="avatar"><img src="images/kophone.jpg" alt="Ko Phone" /></div>
+          <h3>Ko Phone</h3>
+          <p>Database Designer</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="timeline" class="container">
+      <div class="section-title reveal">Timeline</div>
+      <h2 class="section-heading reveal">A steady path from curiosity to engineering craft.</h2>
+      <div class="timeline-grid">
+        <div class="timeline-card glass-card reveal">
+          <h3>Education</h3>
+          <p>Built a strong technical foundation through structured study in programming, logic, and software
+            development principles.</p>
+        </div>
+        <div class="timeline-card glass-card reveal">
+          <h3>Learning Journey</h3>
+          <p>Expanded knowledge through Python, web technologies, databases, APIs, and a growing focus on backend
+            systems and AI.</p>
+        </div>
+        <div class="timeline-card glass-card reveal">
+          <h3>Projects</h3>
+          <p>Created applications, tools, and automation workflows that reflect both practical needs and long-term
+            engineering thinking.</p>
+        </div>
+        <div class="timeline-card glass-card reveal">
+          <h3>Achievements</h3>
+          <p>Delivered multi-part projects, improved reliability, and developed a consistent workflow around planning
+            and implementation.</p>
+        </div>
+        <div class="timeline-card glass-card reveal">
+          <h3>Future Goals</h3>
+          <p>Continue growing toward sophisticated backend engineering, AI product development, and high-scale system
+            design.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificates" class="container">
+      <div class="section-title reveal">Certificates</div>
+      <h2 class="section-heading reveal">Professional recognition and learning milestones.</h2>
+      <div class="certificates-grid">
+        <div class="certificate-card glass-card reveal">
+          <img src="images/kophone.jpg" alt="Certificate preview" />
+          <h3>Python Programming</h3>
+          <p>Certificate placeholder for practical Python development.</p>
+        </div>
+        <div class="certificate-card glass-card reveal">
+          <img src="images/komoe.jpg" alt="Certificate preview" />
+          <h3>Backend Development</h3>
+          <p>Certificate placeholder for backend and API-focused development.</p>
+        </div>
+        <div class="certificate-card glass-card reveal">
+          <img src="images/koshine.jpg" alt="Certificate preview" />
+          <h3>System Design</h3>
+          <p>Certificate placeholder for architecture and scalable solution design.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="github" class="container">
+      <div class="section-title reveal">GitHub</div>
+      <h2 class="section-heading reveal">Open source activity and technical contributions.</h2>
+      <div class="github-grid">
+        <div class="github-card glass-card reveal">
+          <h3>Latest Repositories</h3>
+          <p><strong>AI Assistant Platform</strong> � backend workflow automation and modular Flask services.</p>
+          <p><strong>Developer Dashboard</strong> � polished web experience with responsive interactions.</p>
+          <p><strong>Automation Toolkit</strong> � task automation scripts and reusable utilities.</p>
+          <div class="card-actions">
+            <a class="btn btn-primary" href="https://github.com" target="_blank" rel="noreferrer"><i
+                class="fa-brands fa-github"></i> Visit GitHub Profile</a>
+          </div>
+        </div>
+        <div class="github-card glass-card reveal">
+          <h3>Programming Languages</h3>
+          <div class="badges">
+            <span class="badge-pill">Python</span><span class="badge-pill">JavaScript</span><span
+              class="badge-pill">HTML</span><span class="badge-pill">CSS</span>
+          </div>
+          <h3 style="margin-top:1rem;">Contribution Graph</h3>
+          <div class="github-chart">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container">
+      <div class="section-title reveal">Contact</div>
+      <h2 class="section-heading reveal">Let�s build something valuable together.</h2>
+      <div class="contact-grid">
+        <div class="contact-card glass-card reveal">
+          <h3>Send a message</h3>
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input id="name" type="text" placeholder="Your name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input id="email" type="email" placeholder="you@example.com" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" placeholder="Tell me about your project..."></textarea>
+            </div>
+            <button class="btn btn-primary" type="button"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+          </form>
+        </div>
+        <div class="contact-card glass-card reveal">
+          <h3>Connect</h3>
+          <p><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</p>
+          <p><i class="fa-solid fa-envelope"></i> hello@portfolio.dev</p>
+          <p><i class="fa-brands fa-github"></i> github.com/portfolio</p>
+          <p><i class="fa-brands fa-linkedin-in"></i> linkedin.com/in/portfolio</p>
+          <div class="socials" style="margin-top:1rem;">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div>� 2026 Software Developer. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#home" id="backToTop" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
