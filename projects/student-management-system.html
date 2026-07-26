@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Detail | Student Dashboard System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body>
+    <div id="progress-bar"></div>
+    <div class="loading-screen">
+        <div class="loader"></div>
+    </div>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="brand"><span class="brand-mark"><i class="fa-solid fa-code"></i></span>
+                Portfolio</a>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle"><i class="fa-solid fa-moon"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="detail-page container">
+        <section class="detail-hero reveal glass-card" style="padding: 2.4rem;">
+            <div class="section-title">Personal Flask Project</div>
+            <h1 class="section-heading">Student Dashboard System</h1>
+            <p class="section-copy">A web-based student management system built with Flask that imports student records
+                from Excel, stores them in SQLite, provides filtering capabilities, and generates formatted Excel
+                reports.</p>
+            <div class="badges" style="margin: 1.4rem 0 1.6rem;">
+                <span class="badge-pill">Flask</span>
+                <span class="badge-pill">SQLite</span>
+                <span class="badge-pill">Pandas</span>
+                <span class="badge-pill">OpenPyXL</span>
+            </div>
+            <div class="card-actions">
+                <a class="btn btn-primary" href="https://github.com/shinenyi123/student-dashboard"><i
+                        class="fa-brands fa-github"></i> GitHub</a>
+                <a class="btn btn-secondary" href="https://student-dashboard-1-mmdm.onrender.com/"><i
+                        class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                    Demo</a>
+            </div>
+        </section>
+
+        <section class="reveal">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value" data-count="1" data-suffix="">0</div>
+                    <div class="stat-label">SQLite Database</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" data-count="2" data-suffix="">0</div>
+                    <div class="stat-label">Excel Export Flow</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" data-count="4" data-suffix="">0</div>
+                    <div class="stat-label">Filter Form</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" data-count="1" data-suffix="">0</div>
+                    <div class="stat-label">Template View</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="detail-grid reveal">
+            <div class="detail-card glass-card">
+                <div class="section-title">Project Overview</div>
+                <h3>Student record management in a web interface</h3>
+                <p>The application accepts student data from an uploaded Excel file, stores the records in SQLite, and
+                    displays them in a simple dashboard view. Users can filter the rows by class, gender, and age before
+                    viewing or exporting the results.</p>
+                <h3 style="margin-top:1rem;">Problem</h3>
+                <p>Manual handling of student records in spreadsheets was time-consuming and made it harder to inspect
+                    and
+                    organize data consistently.</p>
+                <h3 style="margin-top:1rem;">Solution</h3>
+                <p>I built a Flask-based workflow that reads Excel input, stores records in SQLite, and provides a basic
+                    interface for filtering and exporting data as Excel files.</p>
+            </div>
+
+            <div class="detail-card glass-card">
+                <div class="section-title">Technology Stack</div>
+                <div class="badges">
+                    <span class="badge-pill">Python</span>
+                    <span class="badge-pill">Flask</span>
+                    <span class="badge-pill">SQLite</span>
+                    <span class="badge-pill">Pandas</span>
+                    <span class="badge-pill">OpenPyXL</span>
+                    <span class="badge-pill">HTML</span>
+                    <span class="badge-pill">CSS</span>
+                    <span class="badge-pill">JavaScript</span>
+                </div>
+                <div class="diagram" style="margin-top: 1rem; padding: 1rem; min-height: 220px;">
+                    <div style="display:grid; gap:.65rem; width:100%;">
+                        <div class="detail-card" style="padding:.9rem 1rem; border-radius: 16px;">Upload Form</div>
+                        <div style="text-align:center; color:var(--accent-2);"><i class="fa-solid fa-arrow-down"></i>
+                        </div>
+                        <div class="detail-card" style="padding:.9rem 1rem; border-radius: 16px;">Flask Route Handler
+                        </div>
+                        <div style="text-align:center; color:var(--accent-2);"><i class="fa-solid fa-arrow-down"></i>
+                        </div>
+                        <div class="detail-card" style="padding:.9rem 1rem; border-radius: 16px;">SQLite Database /
+                            Excel Export</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reveal">
+            <div class="section-title">Development Timeline</div>
+            <h2 class="section-heading">Implementation Steps</h2>
+            <div class="timeline-grid">
+                <article class="timeline-card glass-card">
+                    <span class="timeline-step">01</span>
+                    <h3>Excel Import</h3>
+                    <p>Added support for reading uploaded Excel files and preparing the data for storage.</p>
+                </article>
+                <article class="timeline-card glass-card">
+                    <span class="timeline-step">02</span>
+                    <h3>Database Setup</h3>
+                    <p>Created a SQLite table for storing student records and preserving unique identifiers.</p>
+                </article>
+                <article class="timeline-card glass-card">
+                    <span class="timeline-step">03</span>
+                    <h3>Filtering</h3>
+                    <p>Implemented form-based filters for class, gender, and age values using the application logic.</p>
+                </article>
+                <article class="timeline-card glass-card">
+                    <span class="timeline-step">04</span>
+                    <h3>Excel Export</h3>
+                    <p>Added an export path for generating downloadable Excel files from the filtered dataset.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="detail-grid reveal">
+            <div class="detail-card glass-card">
+                <div class="section-title">Implemented Features</div>
+                <ul style="padding-left: 1rem; line-height: 1.9; color: var(--text-muted);">
+                    <li>Upload and import data from Excel files</li>
+                    <li>Store student records in SQLite</li>
+                    <li>Display records in a table-based dashboard</li>
+                    <li>Filter rows by class, gender, and age</li>
+                    <li>Export filtered data to Excel files</li>
+                </ul>
+            </div>
+
+            <div class="detail-card glass-card">
+                <div class="section-title">Technical Notes</div>
+                <div class="badges">
+                    <span class="badge-pill">Route Handling</span>
+                    <span class="badge-pill">Template Rendering</span>
+                    <span class="badge-pill">Data Transformation</span>
+                    <span class="badge-pill">Flask Routing</span>
+                    <span class="badge-pill">SQLite Database</span>
+                    <span class="badge-pill">Pandas Data Processing</span>
+                    <span class="badge-pill">OpenPyXL Formatting</span>
+                    <span class="badge-pill">Jinja2 Templates</span>
+                </div>
+                <p style="margin-top: 1rem; color: var(--text-muted); line-height: 1.8;">The project uses Flask routes
+                    for form submission, SQLite for persistence, and Pandas/OpenPyXL for reading and exporting
+                    spreadsheet data.</p>
+            </div>
+        </section>
+
+        <section class="detail-grid reveal">
+            <div class="detail-card glass-card">
+                <div class="section-title">Challenges</div>
+                <p>Handling student data from Excel files, converting dates and values into a consistent format, and
+                    making the filtered output available through both the dashboard and Excel export.</p>
+            </div>
+
+            <div class="detail-card glass-card">
+                <div class="section-title">Lessons Learned</div>
+                <p>This project helped improve my understanding of Flask routing, SQLite integration, form handling, and
+                    spreadsheet processing with Python libraries.</p>
+            </div>
+        </section>
+    </main>
+
+    <a href="#" id="backToTop" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
