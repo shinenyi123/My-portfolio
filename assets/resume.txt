@@ -1,0 +1,6 @@
+Name: Software Developer
+Role: Python, Backend, and Systems Engineering
+Highlights:
+- Builds robust backend services with Python, Flask, and SQLite
+- Focuses on secure, reliable, and maintainable software
+- Interested in AI, machine learning, API design, and system architecture
