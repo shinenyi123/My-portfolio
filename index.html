@@ -5,9 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-    content="Premium software developer portfolio with projects, team work, and strong backend engineering focus." />
-  <meta name="keywords" content="software developer, python developer, backend developer, portfolio" />
-  <title>Software Developer | Premium Portfolio</title>
+    content="Student software developer portfolio with focus on Python, backend development, and team projects." />
+  <meta name="keywords" content="software developer, python developer, backend developer, student portfolio" />
+  <title>Student Software Developer | Portfolio</title>
   <link rel="icon" href="images/koshine.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,21 +28,25 @@
     <div class="container">
       <a href="#home" class="brand">
         <span class="brand-mark"><i class="fa-solid fa-code"></i></span>
-        <span>Developer</span>
+        <span data-en="Developer" data-mm="Developer">Developer</span>
       </a>
       <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Personal Projects</a></li>
-        <li><a href="#team-projects">Team Projects</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#timeline">Timeline</a></li>
-        <li><a href="#certificates">Certificates</a></li>
-        <li><a href="#github">GitHub</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home" data-en="Home" data-mm="ပင်မစာမျက်နှာ">Home</a></li>
+        <li><a href="#about" data-en="About" data-mm="အကြောင်း">About</a></li>
+        <li><a href="#skills" data-en="Skills" data-mm="ကျွမ်းကျင်မှုများ">Skills</a></li>
+        <li><a href="#projects" data-en="Personal Projects" data-mm="ကိုယ်ပိုင် Project များ">Personal Projects</a></li>
+        <li><a href="#team-projects" data-en="Team Projects" data-mm="အဖွဲ့လိုက် Project များ">Team Projects</a></li>
+        <li><a href="#team" data-en="Team" data-mm="အဖွဲ့">Team</a></li>
+        <li><a href="#timeline" data-en="Timeline" data-mm="ခရီးစဉ်">Timeline</a></li>
+        <li><a href="#certificates" data-en="Certificates" data-mm="လက်မှတ်များ">Certificates</a></li>
+        <li><a href="#github" data-en="GitHub" data-mm="GitHub">GitHub</a></li>
+        <li><a href="#contact" data-en="Contact" data-mm="ဆက်သွယ်ရန်">Contact</a></li>
       </ul>
       <div class="nav-actions">
+        <button class="theme-toggle" id="langToggle" aria-label="Toggle language"
+          style="margin-right: 8px; font-weight: 600; font-size: 0.85rem;">
+          <span id="langLabel">MM</span>
+        </button>
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i
             class="fa-solid fa-moon"></i></button>
       </div>
@@ -53,21 +57,28 @@
     <section class="hero container">
       <div class="hero-grid">
         <div class="hero-intro reveal">
-          <div class="badge"><i class="fa-solid fa-sparkles"></i><span>Student Portfolio</span></div>
-          <h1 class="hero-title">Crafting <span class="accent">secure</span>, reliable, and high-impact software.</h1>
-          <p class="hero-subtitle">I am a software developer passionate about backend systems, automation, AI, machine
-            learning, and building products that solve real problems with clarity and precision.</p>
+          <div class="badge"><i class="fa-solid fa-sparkles"></i><span data-en="Student Developer"
+              data-mm="ကျောင်းသား Developer">Student Developer</span></div>
+          <h1 class="hero-title" data-en="Building practical software and learning core engineering."
+            data-mm="လက်တွေ့အသုံးဝင်မည့် Software များ တည်ဆောက်ရင်း လေ့လာနေသူပါ။">Building practical software and
+            learning core engineering.</h1>
+          <p class="hero-subtitle"
+            data-en="I am an 18-year-old student software developer focused on backend systems, Web Development, and Database Design, while actively exploring Artificial Intelligence and Machine Learning."
+            data-mm="ကျွန်တော်က Backend Systems၊ Web Development နဲ့ Database Design တွေကို စိတ်ဝင်စားပြီး Artificial Intelligence နဲ့ Machine Learning တွေကို တောက်လျှောက် လေ့လာနေတဲ့ အသက် ၁၈ နှစ်အရွယ် ကျောင်းသား Developer တစ်ယောက်ဖြစ်ပါတယ်။">
+          </p>
           <div class="typing-text" id="typedText">Software Developer</div>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#projects"><i class="fa-solid fa-diagram-project"></i> View Projects</a>
-            <a class="btn btn-secondary" href="#contact"><i class="fa-solid fa-paper-plane"></i> Contact Me</a>
-            <a class="btn btn-secondary" href="assets/resume.txt" download><i class="fa-solid fa-download"></i> Download
-              Resume</a>
+            <a class="btn btn-primary" href="#projects"><i class="fa-solid fa-diagram-project"></i> <span
+                data-en="View Projects" data-mm="Project များကြည့်ရန်">View Projects</span></a>
+            <a class="btn btn-secondary" href="#contact"><i class="fa-solid fa-paper-plane"></i> <span
+                data-en="Contact Me" data-mm="ဆက်သွယ်ရန်">Contact Me</span></a>
+            <a class="btn btn-secondary" href="assets/resume.txt" download><i class="fa-solid fa-download"></i> <span
+                data-en="Download Resume" data-mm="Resume ရယူရန်">Download Resume</span></a>
           </div>
           <div class="socials">
             <a href="https://github.com" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a>
             <a href="https://linkedin.com" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="mailto:hello@portfolio.dev"><i class="fa-solid fa-envelope"></i></a>
+            <a href="mailto:your-email@example.com"><i class="fa-solid fa-envelope"></i></a>
             <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
           </div>
         </div>
@@ -84,129 +95,152 @@
       <div class="stats-grid reveal">
         <div class="stat-card glass-card">
           <div class="stat-value" data-count="3" data-suffix="">0</div>
-          <div class="stat-label">Projects Completed</div>
+          <div class="stat-label" data-en="Projects Built" data-mm="ပြုလုပ်ခဲ့သော Project များ">Projects Built</div>
         </div>
         <div class="stat-card glass-card">
           <div class="stat-value" data-count="8" data-suffix="">0</div>
-          <div class="stat-label">Technologies Learned</div>
+          <div class="stat-label" data-en="Technologies Practiced" data-mm="လေ့လာထားသော နည်းပညာများ">Technologies
+            Practiced</div>
         </div>
         <div class="stat-card glass-card">
           <div class="stat-value" data-count="3" data-suffix="">0</div>
-          <div class="stat-label">GitHub Repositories</div>
+          <div class="stat-label" data-en="GitHub Repositories" data-mm="GitHub Repositories">GitHub Repositories</div>
         </div>
         <div class="stat-card glass-card">
           <div class="stat-value" data-count="800" data-suffix="+">0</div>
-          <div class="stat-label">Hours of Coding</div>
+          <div class="stat-label" data-en="Hours of Learning & Coding" data-mm="Coding ပြုလုပ်ခဲ့သော နာရီများ">Hours of
+            Learning & Coding</div>
         </div>
         <div class="stat-card glass-card">
           <div class="stat-value" data-count="1" data-suffix="">0</div>
-          <div class="stat-label">Years Learning Programming</div>
+          <div class="stat-label" data-en="Year Learning Software Development"
+            data-mm="Software လေ့လာခဲ့သည့် သက်တမ်း (နှစ်)">Year Learning Software Development</div>
         </div>
       </div>
     </section>
 
     <section id="about" class="container">
-      <div class="section-title reveal">About Me</div>
-      <h2 class="section-heading reveal">Building software with purpose, structure, and long-term value.</h2>
-      <p class="section-copy reveal">My journey started with curiosity and grew into a deep passion for problem solving,
-        system design, and dependable engineering. I enjoy translating ideas into reliable products that help users and
-        teams move faster.</p>
+      <div class="section-title reveal" data-en="About Me" data-mm="ကျွန်တော့်အကြောင်း">About Me</div>
+      <h2 class="section-heading reveal" data-en="Focusing on fundamentals, clean logic, and continuous progress."
+        data-mm="Software Development ရဲ့ အခြေခံတွေနဲ့ စနစ်ကျတဲ့ စဉ်းစားပုံတွေကို အမြဲတမ်း တိုးတက်အောင် လေ့လာနေပါတယ်။">
+        Focusing on fundamentals, clean logic, and continuous progress.</h2>
+      <p class="section-copy reveal"
+        data-en="My programming journey began with curiosity about how web applications work behind the scenes. Today, I build small-to-medium web applications, organize databases, and practice software design principles through hands-on development."
+        data-mm="Programming ခရီးစဉ်ကို Web Application တွေ နောက်ကွယ်မှာ ဘယ်လိုအလုပ်လုပ်သလဲဆိုတဲ့ စိတ်ဝင်စားမှုနဲ့ စတင်ခဲ့တာပါ။ လက်ရှိမှာတော့ Web Application တွေ ရေးသားခြင်း၊ Database များ ဒီဇိုင်းဆွဲခြင်းနဲ့ Software Engineering ရဲ့ အခြေခံ သဘောတရားတွေကို လက်တွေ့ Project တွေ လုပ်ရင်း လေ့လာနေပါတယ်။">
+      </p>
       <div class="about-grid">
         <div class="about-card glass-card reveal">
           <div class="icon-pill"><i class="fa-solid fa-user-astronaut"></i></div>
-          <h3>Who I Am</h3>
-          <p>I am a software developer driven by clean architecture, thoughtful implementation, and a strong engineering
-            mindset. My work is grounded in reliability, clarity, and maintainability.</p>
+          <h3 data-en="Who I Am" data-mm="ကျွန်တော် ဘယ်သူလဲ">Who I Am</h3>
+          <p data-en="I am an 18-year-old student developer who values clean logic, readable code, and well-structured projects."
+            data-mm="ကျွန်တော်က သန့်ရှင်းပြီး ဖတ်ရလွယ်ကူတဲ့ Code တွေ၊ စနစ်ကျတဲ့ Project Structure တွေကို သဘောကျတဲ့ ၁၈ နှစ်အရွယ် ကျောင်းသား Developer တစ်ယောက်ပါ။">
+          </p>
         </div>
         <div class="about-card glass-card reveal">
           <div class="icon-pill"><i class="fa-solid fa-route"></i></div>
-          <h3>My Journey</h3>
-          <p>My programming path has included Python, web technologies, backend development, databases, APIs, and
-            increasingly system design and AI-oriented engineering.</p>
+          <h3 data-en="My Learning Journey" data-mm="လေ့လာမှု ခရီးစဉ်">My Learning Journey</h3>
+          <p data-en="I started with Python fundamentals, then moved into web tools like Flask, SQLite, HTML, CSS, and JavaScript. Now I am deepening my understanding of System Design and AI."
+            data-mm="Python အခြေခံကနေ စတင်ခဲ့ပြီး Flask, SQLite, HTML, CSS နဲ့ JavaScript တို့ကို လေ့လာခဲ့ပါတယ်။ အခုအခါမှာတော့ System Design နဲ့ AI သဘောတရားတွေကို ပိုမိုနက်နက်ရှိုင်းရှိုင်း လေ့လာနေပါတယ်။">
+          </p>
         </div>
         <div class="about-card glass-card reveal">
           <div class="icon-pill"><i class="fa-solid fa-brain"></i></div>
-          <h3>What I Care About</h3>
-          <p>I am especially interested in backend development, artificial intelligence, machine learning, API design,
-            and thoughtful system architecture.</p>
+          <h3 data-en="Current Focus" data-mm="လက်ရှိ စိတ်ဝင်စားမှု">Current Focus</h3>
+          <p data-en="I am particularly interested in backend workflows, RESTful API design, database structure, and applying Machine Learning concepts to practical software."
+            data-mm="Backend workflows၊ RESTful API Design၊ Database Structure တွေနဲ့ Machine Learning နည်းပညာတွေကို လက်တွေ့ Application တွေမှာ ပေါင်းစပ်အသုံးပြုဖို့ စိတ်ဝင်စားပါတယ်။">
+          </p>
         </div>
         <div class="about-card glass-card reveal">
           <div class="icon-pill"><i class="fa-solid fa-rocket"></i></div>
-          <h3>My Goal</h3>
-          <p>I aim to build software that feels secure, useful, and resilient while remaining elegant and approachable
-            for both users and teams.</p>
+          <h3 data-en="My Goals" data-mm="မျှော်မှန်းချက်">My Goals</h3>
+          <p data-en="I want to continuously improve my backend engineering skills, collaborate with other developers, and build useful, dependable products."
+            data-mm="Backend Engineering ကျွမ်းကျင်မှုကို အစဉ်အမြဲ တိုးတက်အောင် လုပ်ဆောင်ပြီး တခြား Developer တွေနဲ့ ပူးပေါင်းကာ အသုံးဝင်ပြီး ခိုင်မာတဲ့ Software တွေ ဖန်တီးသွားချင်ပါတယ်။">
+          </p>
         </div>
       </div>
     </section>
 
     <section id="skills" class="container">
-      <div class="section-title reveal">Skills</div>
-      <h2 class="section-heading reveal">Technical stack and growth areas.</h2>
-      <p class="section-copy reveal">A focused blend of practical experience and continuous learning, with strong
-        fundamentals in backend development and modern web engineering.</p>
+      <div class="section-title reveal" data-en="Skills" data-mm="ကျွမ်းကျင်မှုများ">Skills</div>
+      <h2 class="section-heading reveal" data-en="Technical stack and active learning areas."
+        data-mm="လက်ရှိ အသုံးပြုနေသော နည်းပညာများနှင့် လေ့လာနေသည့် နယ်ပယ်များ">Technical stack and active learning
+        areas.</h2>
+      <p class="section-copy reveal"
+        data-en="A growing technical foundation focused on core Python development, backend basics, database organization, and teamwork."
+        data-mm="Python အဓိကထား၍ Backend အခြေခံများ၊ Database ပြင်ဆင်မှုများနှင့် အဖွဲ့လိုက် ပူးပေါင်းဆောင်ရွက်ခြင်းများဖြင့် တိုးတက်အောင် ကြိုးစားနေသည့် နည်းပညာဆိုင်ရာ အခြေခံများဖြစ်ပါတယ်။">
+      </p>
       <div class="skills-grid">
         <div class="skill-card glass-card reveal">
           <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
           <h3>Python</h3>
-          <p>Core backend logic, automation, scripting, and data-driven applications.</p>
-          <div class="progress-track">
-            <div class="progress-fill" style="width: 92%"></div>
-          </div>
-        </div>
-        <div class="skill-card glass-card reveal">
-          <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
-          <h3>HTML</h3>
-          <p>Semantic structure and reusable, accessible page layouts.</p>
-          <div class="progress-track">
-            <div class="progress-fill" style="width: 88%"></div>
-          </div>
-        </div>
-        <div class="skill-card glass-card reveal">
-          <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>
-          <h3>CSS</h3>
-          <p>Modern styling, responsive design, and polished UI systems.</p>
-          <div class="progress-track">
-            <div class="progress-fill" style="width: 86%"></div>
-          </div>
-        </div>
-        <div class="skill-card glass-card reveal">
-          <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
-          <h3>JavaScript</h3>
-          <p>Dynamic interactions, animation, and front-end functionality.</p>
+          <p data-en="Core backend development, scripting, data structures, and automation basics."
+            data-mm="Backend logic၊ Scripting၊ Data structures နဲ့ အခြေခံ Automation များ ရေးသားခြင်း။"></p>
           <div class="progress-track">
             <div class="progress-fill" style="width: 80%"></div>
           </div>
         </div>
         <div class="skill-card glass-card reveal">
-          <div class="skill-icon"><i class="fa-solid fa-fire"></i></div>
-          <h3>Flask</h3>
-          <p>Lightweight backend development with modular API creation.</p>
+          <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+          <h3>HTML</h3>
+          <p data-en="Semantic structure and clear page structure for web applications."
+            data-mm="Web application များအတွက် စနစ်ကျသော အခြေခံ HTML Structure များ ရေးသားခြင်း။"></p>
           <div class="progress-track">
-            <div class="progress-fill" style="width: 84%"></div>
+            <div class="progress-fill" style="width: 85%"></div>
           </div>
         </div>
         <div class="skill-card glass-card reveal">
-          <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
-          <h3>SQLite</h3>
-          <p>Reliable local data storage for smaller production-grade systems.</p>
+          <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>
+          <h3>CSS</h3>
+          <p data-en="Responsive design, layout organization, and modern UI practices."
+            data-mm="Responsive Design နှင့် သန့်ရှင်းသပ်ရပ်သော UI layout များ ပြင်ဆင်ခြင်း။"></p>
+          <div class="progress-track">
+            <div class="progress-fill" style="width: 75%"></div>
+          </div>
+        </div>
+        <div class="skill-card glass-card reveal">
+          <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+          <h3>JavaScript</h3>
+          <p data-en="Basic DOM manipulation, front-end validation, and dynamic web interactions."
+            data-mm="အခြေခံ DOM Manipulation၊ Front-end Validation နှင့် Web Interactions များ။"></p>
+          <div class="progress-track">
+            <div class="progress-fill" style="width: 70%"></div>
+          </div>
+        </div>
+        <div class="skill-card glass-card reveal">
+          <div class="skill-icon"><i class="fa-solid fa-fire"></i></div>
+          <h3>Flask</h3>
+          <p data-en="Routing, request handling, template rendering, and lightweight API construction."
+            data-mm="Routing၊ Request Handling၊ Template Rendering နှင့် အခြေခံ API များ ရေးသားခြင်း။"></p>
           <div class="progress-track">
             <div class="progress-fill" style="width: 78%"></div>
           </div>
         </div>
         <div class="skill-card glass-card reveal">
+          <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+          <h3>SQLite</h3>
+          <p data-en="Schema structure, CRUD queries, relational tables, and data persistence."
+            data-mm="Database Schema တည်ဆောက်ခြင်း၊ CRUD Query များ နှင့် Relational Tables တွဲဆက်ခြင်း။"></p>
+          <div class="progress-track">
+            <div class="progress-fill" style="width: 75%"></div>
+          </div>
+        </div>
+        <div class="skill-card glass-card reveal">
           <div class="skill-icon"><i class="fa-brands fa-github"></i></div>
           <h3>Git & GitHub</h3>
-          <p>Version control, collaboration, review practices, and team workflows.</p>
+          <p data-en="Version control, branching, team coordination, pull requests, and repository management."
+            data-mm="Version control၊ Branching၊ Team Collaboration၊ Pull Requests နှင့် Repository စီမံခန့်ခွဲမှု။">
+          </p>
           <div class="progress-track">
-            <div class="progress-fill" style="width: 90%"></div>
+            <div class="progress-fill" style="width: 82%"></div>
           </div>
         </div>
         <div class="skill-card glass-card reveal">
           <div class="skill-icon"><i class="fa-solid fa-robot"></i></div>
-          <h3>Learning</h3>
-          <p>Machine Learning, Artificial Intelligence, System Design, and API Development.</p>
+          <h3 data-en="Exploring" data-mm="ဆက်လက်လေ့လာနေသည်များ">Exploring</h3>
+          <p data-en="Basic Machine Learning workflows, Artificial Intelligence concepts, System Design, and API architecture."
+            data-mm="Machine Learning သဘောတရားများ၊ AI Concepts၊ System Design အခြေခံများနှင့် API Architecture။"></p>
           <div class="progress-track">
-            <div class="progress-fill" style="width: 70%"></div>
+            <div class="progress-fill" style="width: 60%"></div>
           </div>
         </div>
       </div>
@@ -215,15 +249,18 @@
     <section id="projects" class="container">
       <div class="filter-bar reveal">
         <div>
-          <div class="section-title">Personal Projects</div>
-          <h2 class="section-heading">Selected projects built with care and direction.</h2>
+          <div class="section-title" data-en="Personal Projects" data-mm="ကိုယ်ပိုင် Project များ">Personal Projects
+          </div>
+          <h2 class="section-heading" data-en="Practical applications built to sharpen engineering skills."
+            data-mm="Software Development ကျွမ်းကျင်မှု ပိုမိုတိုးတက်စေရန် ရေးသားခဲ့သော လက်တွေ့ Project များ">Practical
+            applications built to sharpen engineering skills.</h2>
         </div>
         <div class="search-box">
           <i class="fa-solid fa-magnifying-glass"></i>
           <input id="projectSearch" type="text" placeholder="Search projects" />
         </div>
         <div class="filter-buttons">
-          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn active" data-filter="all" data-en="All" data-mm="အားလုံး">All</button>
           <button class="filter-btn" data-filter="python">Python</button>
           <button class="filter-btn" data-filter="web">Web</button>
           <button class="filter-btn" data-filter="ai">AI</button>
@@ -233,13 +270,14 @@
         <article class="project-card glass-card reveal" data-category="web">
           <img class="card-image" src="team-projects/images/Student.png" alt="web assistant interface" />
           <h3>Student Management System</h3>
-          <p>A web-based student data management system built with Flask that helps schools efficiently manage, filter,
-            analyze, and export student information.</p>
+          <p data-en="A web application built with Python, Flask, and SQLite that allows users to manage student records, filter data efficiently, and export structured information."
+            data-mm="Python, Flask နဲ့ SQLite တွေကို သုံးပြီး ရေးသားထားတဲ့ Web Application တစ်ခုဖြစ်ပါတယ်။ ကျောင်းသားအချက်အလက်များကို စနစ်တကျ သိမ်းဆည်းရန်၊ ရှာဖွေရန်နဲ့ Export ထုတ်ယူရန် ကူညီပေးပါတယ်။">
+          </p>
           <div class="badges">
             <span class="badge-pill">Python</span>
             <span class="badge-pill">Flask</span>
             <span class="badge-pill">SQLite</span>
-            <span class="badge-pill">Html</span>
+            <span class="badge-pill">HTML</span>
             <span class="badge-pill">CSS</span>
           </div>
           <div class="card-actions">
@@ -248,42 +286,32 @@
             <a class="btn btn-secondary" href="https://student-dashboard-1-mmdm.onrender.com/"><i
                 class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
             <a class="btn btn-primary" href="projects/student-management-system.html"><i
-                class="fa-solid fa-arrow-right"></i> Read
-              More</a>
+                class="fa-solid fa-arrow-right"></i> <span data-en="Read More" data-mm="အသေးစိတ်ကြည့်ရန်">Read
+                More</span></a>
           </div>
-          <!--</article>
-        <article class="project-card glass-card reveal" data-category="web">
-          <img class="card-image" src="images/kophone.jpg" alt="Personal dashboard" />
-          <h3>Developer Dashboard</h3>
-          <p>A polished web dashboard focused on project tracking, task visibility, and performance reporting.</p>
-          <div class="badges"><span class="badge-pill">HTML</span><span class="badge-pill">CSS</span><span
-              class="badge-pill">JavaScript</span></div>
-          <div class="card-actions">
-            <a class="btn btn-secondary" href="#"><i class="fa-brands fa-github"></i> GitHub</a>
-            <a class="btn btn-secondary" href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
-            <a class="btn btn-primary" href="projects/ai-assistant.html"><i class="fa-solid fa-arrow-right"></i> Read
-              More</a>
-          </div>
-        </article>-->
+        </article>
       </div>
     </section>
 
     <section id="team-projects" class="container">
-      <div class="section-title reveal">Team Projects</div>
-      <h2 class="section-heading reveal">Collaborative work built through disciplined execution.</h2>
+      <div class="section-title reveal" data-en="Team Projects" data-mm="အဖွဲ့လိုက် Project များ">Team Projects</div>
+      <h2 class="section-heading reveal" data-en="Collaborative experience and shared development."
+        data-mm="အဖွဲ့ဝင်များနှင့် ပူးပေါင်းဆောင်ရွက်ခဲ့သည့် အတွေ့အကြုံများ">Collaborative experience and shared
+        development.</h2>
       <div class="team-projects-grid">
         <article class="team-card glass-card reveal">
           <img class="card-image" src="team-projects/images/encrypted-text-sharing-platform.png"
             alt="Team project showcase" />
           <h3>Encrypted Text Sharing Platform</h3>
-          <p><strong>Team:</strong> CodeTogether</p>
-          <p><strong>My Role:</strong> Team Leader</p>
-          <p>Led the development team in designing and building a secure encrypted text-sharing platform, coordinating
-            backend development, database architecture, and system integration.</p>
+          <p><strong data-en="Team:" data-mm="အဖွဲ့ -">Team:</strong> CodeTogether</p>
+          <p><strong data-en="My Role:" data-mm="ပါဝင်ခဲ့သည့် အခန်းကဏ္ဍ -">My Role:</strong> Team Leader</p>
+          <p data-en="Led a small development team to build an encrypted text sharing platform. Responsible for overall project structure, backend logic with Flask, database design, API design, and team workflow coordination."
+            data-mm="Encrypted Text Sharing Platform တစ်ခုကို အဖွဲ့လိုက် ရေးသားရာမှာ Team Leader အဖြစ် ပါဝင်ခဲ့ပါတယ်။ Project တည်ဆောက်ပုံ၊ Flask Backend logic များ၊ Database Design၊ API Design နဲ့ အဖွဲ့ဝင်များကြား Workflow ညှိနှိုင်းခြင်းတို့ကို တာဝန်ယူဆောင်ရွက်ခဲ့ပါတယ်။">
+          </p>
           <div class="badges">
             <span class="badge-pill">Flask</span>
-            <span class="badge-pill">Html</span>
-            <span class="badge-pill">Css</span>
+            <span class="badge-pill">HTML</span>
+            <span class="badge-pill">CSS</span>
             <span class="badge-pill">JavaScript</span>
             <span class="badge-pill">Python</span>
             <span class="badge-pill">psycopg2</span>
@@ -294,62 +322,52 @@
           </div>
           <div class="card-actions">
             <a class="btn btn-secondary" href="https://encrypted-text-sharing-platform-production.up.railway.app/"><i
-                class="fa-solid fa-globe"></i> Team Website</a>
+                class="fa-solid fa-globe"></i> <span data-en="Live Demo" data-mm="Live Demo">Live Demo</span></a>
             <a class="btn btn-secondary"
               href="https://github.com/Team-Projects-ShineCompy/encrypted-text-sharing-platform"><i
                 class="fa-brands fa-github"></i> GitHub</a>
             <a class="btn btn-primary" href="team-projects/encrypted-text-sharing-platform.html"><i
-                class="fa-solid fa-arrow-right"></i>
-              Read More</a>
+                class="fa-solid fa-arrow-right"></i> <span data-en="Read More" data-mm="အသေးစိတ်ကြည့်ရန်">Read
+                More</span></a>
           </div>
         </article>
-        <!--<article class="team-card glass-card reveal">
-          <img class="card-image" src="images/komoe.jpg" alt="Project architecture" />
-          <h3>Pulse Operations Suite</h3>
-          <p><strong>Team:</strong> Layered Labs</p>
-          <p><strong>My Role:</strong> Backend Lead</p>
-          <p>A product suite that combines monitoring workflows, user roles, and service integration.</p>
-          <div class="badges"><span class="badge-pill">Python</span><span class="badge-pill">API</span><span
-              class="badge-pill">Git</span></div>
-          <div class="card-actions">
-            <a class="btn btn-secondary" href="https://coruscating-muffin-2682d4.netlify.app/"><i
-                class="fa-solid fa-globe"></i> Team
-              Website</a>
-            <a class="btn btn-secondary" href="#"><i class="fa-brands fa-github"></i> GitHub</a>
-            <a class="btn btn-primary" href="team-projects/nebula-platform.html"><i class="fa-solid fa-arrow-right"></i>
-              Read More</a>
-          </div>
-        </article>-->
       </div>
     </section>
 
     <section id="team" class="container">
-      <div class="section-title reveal">Team</div>
-      <h2 class="section-heading reveal">A focused team culture centered on quality and momentum.</h2>
+      <div class="section-title reveal" data-en="Team" data-mm="အဖွဲ့">Team</div>
+      <h2 class="section-heading reveal" data-en="Learning through team collaboration and technical exchange."
+        data-mm="အဖွဲ့လိုက် ပူးပေါင်းဆောင်ရွက်ခြင်းဖြင့် လေ့လာတိုးတက်မှုများ">Learning through team collaboration and
+        technical exchange.</h2>
       <div class="team-hero">
         <div class="glass-card reveal" style="padding:1.5rem;">
           <img class="team-logo" src="images/koshine.png" alt="Team logo" />
           <h3>Nova Systems Collective</h3>
-          <p class="section-copy">Our mission is to build dependable systems, create strong engineering habits, and ship
-            solutions that people can trust. Our vision is to grow into a team known for thoughtful delivery and lasting
-            impact.</p>
+          <p class="section-copy"
+            data-en="A student development group formed to practice building full-stack applications, share programming knowledge, and improve software engineering skills through real practice."
+            data-mm="ကျောင်းသား Developer များနှင့် ဖွဲ့စည်းထားပြီး Full-stack Application များ အတူတကွ ရေးသားခြင်း၊ နည်းပညာများ မျှဝေခြင်းနှင့် Software Engineering စွမ်းရည်များ တိုးတက်စေရန် လေ့လာနေသော အဖွဲ့ဖြစ်ပါတယ်။">
+          </p>
           <div class="card-actions">
             <a class="btn btn-primary" href="https://coruscating-muffin-2682d4.netlify.app/"><i
-                class="fa-solid fa-globe"></i> Visit Team Website</a>
+                class="fa-solid fa-globe"></i> <span data-en="Visit Team Site" data-mm="အဖွဲ့ Website ကြည့်ရန်">Visit
+                Team Site</span></a>
             <a class="btn btn-secondary" href="https://github.com/Team-Projects-ShineCompy"><i
-                class="fa-brands fa-github"></i> GitHub Organization</a>
+                class="fa-brands fa-github"></i> GitHub Org</a>
           </div>
         </div>
         <div class="glass-card reveal" style="padding:1.5rem;">
-          <div class="section-title">My Position</div>
+          <div class="section-title" data-en="My Position" data-mm="တာဝန်ယူထားသော အခန်းကဏ္ဍ">My Position</div>
           <h3>TEAM LEADER</h3>
-          <p>I lead planning, backend implementation, database design, system architecture, code reviews, and technical
-            coordination across the team.</p>
+          <p data-en="I assist with backend feature design, database layout, technical decision-making, and GitHub organization during team projects."
+            data-mm="အဖွဲ့လိုက် Project များတွင် Backend Feature များ ရေးသားခြင်း၊ Database တည်ဆောက်ခြင်း၊ နည်းပညာပိုင်းဆိုင်ရာ ညှိနှိုင်းခြင်းများနှင့် GitHub စီမံခန့်ခွဲခြင်းတို့ကို ကူညီလုပ်ဆောင်ပါတယ်။">
+          </p>
           <div class="badges">
-            <span class="badge-pill">Project Planning</span><span class="badge-pill">Backend Development</span><span
-              class="badge-pill">Database Design</span>
-            <span class="badge-pill">System Design</span><span class="badge-pill">GitHub Management</span><span
-              class="badge-pill">Code Review</span>
+            <span class="badge-pill">Project Planning</span>
+            <span class="badge-pill">Backend Development</span>
+            <span class="badge-pill">Database Design</span>
+            <span class="badge-pill">System Design</span>
+            <span class="badge-pill">GitHub Management</span>
+            <span class="badge-pill">Code Review</span>
           </div>
         </div>
       </div>
@@ -370,80 +388,85 @@
     </section>
 
     <section id="timeline" class="container">
-      <div class="section-title reveal">Timeline</div>
-      <h2 class="section-heading reveal">A steady path from curiosity to engineering craft.</h2>
+      <div class="section-title reveal" data-en="Timeline" data-mm="ခရီးစဉ်">Timeline</div>
+      <h2 class="section-heading reveal" data-en="Steps in my development journey so far."
+        data-mm="Developer တစ်ယောက်အဖြစ် လေ့လာလျှောက်လှမ်းခဲ့သော ခရီးစဉ်">Steps in my development journey so far.</h2>
       <div class="timeline-grid">
         <div class="timeline-card glass-card reveal">
-          <h3>Education</h3>
-          <p>Built a strong technical foundation through structured study in programming, logic, and software
-            development principles.</p>
+          <h3 data-en="Foundations" data-mm="အခြေခံများ လေ့လာခြင်း">Foundations</h3>
+          <p data-en="Learned programming logic, basic problem solving, and Python syntax."
+            data-mm="Programming Logic များနှင့် Python syntax အခြေခံများကို စတင်လေ့လာခဲ့ခြင်း။"></p>
         </div>
         <div class="timeline-card glass-card reveal">
-          <h3>Learning Journey</h3>
-          <p>Expanded knowledge through Python, web technologies, databases, APIs, and a growing focus on backend
-            systems and AI.</p>
+          <h3 data-en="Web & Backend Basics" data-mm="Web & Backend အခြေခံများ">Web & Backend Basics</h3>
+          <p data-en="Expanded into Flask, relational databases using SQLite, and HTML/CSS/JS fundamentals."
+            data-mm="Flask Framework, SQLite Database များနှင့် HTML/CSS/JS အခြေခံများကို ဆက်လက် လေ့လာခဲ့ခြင်း။"></p>
         </div>
         <div class="timeline-card glass-card reveal">
-          <h3>Projects</h3>
-          <p>Created applications, tools, and automation workflows that reflect both practical needs and long-term
-            engineering thinking.</p>
+          <h3 data-en="Practical Projects" data-mm="လက်တွေ့ Project များ ရေးသားခြင်း">Practical Projects</h3>
+          <p data-en="Built personal projects like the Student Management System to practice full CRUD operations."
+            data-mm="Student Management System အပါအဝင် လက်တွေ့ အသုံးဝင်မည့် CRUD Project များကို ကိုယ်တိုင် ရေးသားခဲ့ခြင်း။">
+          </p>
         </div>
         <div class="timeline-card glass-card reveal">
-          <h3>Achievements</h3>
-          <p>Delivered multi-part projects, improved reliability, and developed a consistent workflow around planning
-            and implementation.</p>
+          <h3 data-en="Team Leadership" data-mm="အဖွဲ့လိုက် ဦးဆောင် ဆောင်ရွက်ခြင်း">Team Leadership</h3>
+          <p data-en="Worked as a Team Leader on an encrypted text sharing project, improving teamwork and Git workflows."
+            data-mm="Encrypted Text Sharing Platform တွင် Team Leader အဖြစ် ပါဝင်ခဲ့ပြီး အဖွဲ့လိုက် ပူးပေါင်းဆောင်ရွက်မှုနှင့် Git Workflow များကို တိုးတက်စေခဲ့ခြင်း။">
+          </p>
         </div>
         <div class="timeline-card glass-card reveal">
-          <h3>Future Goals</h3>
-          <p>Continue growing toward sophisticated backend engineering, AI product development, and high-scale system
-            design.</p>
+          <h3 data-en="Future Growth" data-mm="ရှေ့ဆက်လေ့လာမည့် ရည်မှန်းချက်များ">Future Growth</h3>
+          <p data-en="Focusing on System Design concepts, deeper backend optimization, and practical Artificial Intelligence integrations."
+            data-mm="System Design သဘောတရားများ၊ Backend ပိုမိုကောင်းမွန်အောင် ပြင်ဆင်ခြင်းနှင့် Artificial Intelligence ဆိုင်ရာ နည်းပညာများကို ဆက်လက် လေ့လာသွားရန်။">
+          </p>
         </div>
       </div>
     </section>
 
     <section id="certificates" class="container">
-      <div class="section-title reveal">Certificates</div>
-      <h2 class="section-heading reveal">I have no certificates to display at the moment.</h2>
+      <div class="section-title reveal" data-en="Certificates" data-mm="လက်မှတ်များ">Certificates</div>
+      <h2 class="section-heading reveal" data-en="I currently have no official certificates to display."
+        data-mm="လက်ရှိတွင် ပြသရန် တရားဝင် သင်တန်းဆင်းလက်မှတ်များ မရှိသေးပါ။">I currently have no official certificates
+        to display.</h2>
       <div class="certificates-grid">
         <div class="certificate-card glass-card reveal">
           <img src="" alt="Certificate preview" />
-          <h3>Nothing</h3>
-          <p>I have no certificates to display at the moment.</p>
+          <h3 data-en="In Progress" data-mm="လေ့လာဆဲ ဖြစ်ပါသည်">In Progress</h3>
+          <p data-en="Focusing on practical skills and project creation over certificate collection."
+            data-mm="လက်မှတ်များထက် လက်တွေ့ ရေးသားနိုင်သည့် ကျွမ်းကျင်မှုများနှင့် Project များကို ပိုမို အဓိကထား လေ့လာနေပါသည်။">
+          </p>
         </div>
-        <!--<div class="certificate-card glass-card reveal">
-          <img src="images/komoe.png" alt="Certificate preview" />
-          <h3>Backend Development</h3>
-          <p>Certificate placeholder for backend and API-focused development.</p>
-        </div>
-        <div class="certificate-card glass-card reveal">
-          <img src="images/koshine.png" alt="Certificate preview" />
-          <h3>System Design</h3>
-          <p>Certificate placeholder for architecture and scalable solution design.</p>
-        </div>-->
       </div>
     </section>
 
     <section id="github" class="container">
-      <div class="section-title reveal">GitHub</div>
-      <h2 class="section-heading reveal">Open source activity and technical contributions.</h2>
+      <div class="section-title reveal" data-en="GitHub" data-mm="GitHub">GitHub</div>
+      <h2 class="section-heading reveal" data-en="Code practice and project repositories."
+        data-mm="Code လေ့လာရေးသားမှုများနှင့် Repository များ">Code practice and project repositories.</h2>
       <div class="github-grid">
         <div class="github-card glass-card reveal">
-          <h3>Latest Repositories</h3>
-          <p><strong>AI Assistant Platform</strong> � backend workflow automation and modular Flask services.</p>
-          <p><strong>Developer Dashboard</strong> � polished web experience with responsive interactions.</p>
-          <p><strong>Automation Toolkit</strong> � task automation scripts and reusable utilities.</p>
+          <h3 data-en="Active Work" data-mm="ပြုလုပ်ခဲ့သော လုပ်ဆောင်ချက်များ">Active Work</h3>
+          <p><strong data-en="Student Management System" data-mm="Student Management System">Student Management
+              System</strong> - Flask & SQLite backend implementation.</p>
+          <p><strong data-en="Encrypted Text Sharing Platform" data-mm="Encrypted Text Sharing Platform">Encrypted Text
+              Sharing Platform</strong> - Team Leader backend project.</p>
+          <p><strong data-en="Python Scripts & Exercises" data-mm="Python Scripts & Exercises">Python Scripts &
+              Exercises</strong> - Practice algorithms and automation tools.</p>
           <div class="card-actions">
             <a class="btn btn-primary" href="https://github.com/shinenyi123" target="_blank" rel="noreferrer"><i
-                class="fa-brands fa-github"></i> Visit GitHub Profile</a>
+                class="fa-brands fa-github"></i> <span data-en="Visit GitHub Profile"
+                data-mm="GitHub Profile ကြည့်ရန်">Visit GitHub Profile</span></a>
           </div>
         </div>
         <div class="github-card glass-card reveal">
-          <h3>Programming Languages</h3>
+          <h3 data-en="Technologies Used" data-mm="အသုံးပြုထားသော နည်းပညာများ">Technologies Used</h3>
           <div class="badges">
             <span class="badge-pill">Python</span><span class="badge-pill">JavaScript</span><span
-              class="badge-pill">HTML</span><span class="badge-pill">CSS</span>
+              class="badge-pill">HTML</span><span class="badge-pill">CSS</span><span
+              class="badge-pill">Flask</span><span class="badge-pill">SQLite</span>
           </div>
-          <h3 style="margin-top:1rem;">Contribution Graph</h3>
+          <h3 style="margin-top:1rem;" data-en="Contribution Overview" data-mm="Activity အကျဉ်းချုပ်">Contribution
+            Overview</h3>
           <div class="github-chart">
             <div></div>
             <div></div>
@@ -458,37 +481,42 @@
     </section>
 
     <section id="contact" class="container">
-      <div class="section-title reveal">Contact</div>
-      <h2 class="section-heading reveal">Let�s build something valuable together.</h2>
+      <div class="section-title reveal" data-en="Contact" data-mm="ဆက်သွယ်ရန်">Contact</div>
+      <h2 class="section-heading reveal" data-en="Feel free to reach out for inquiries or collaboration."
+        data-mm="အကြံပြုလိုပါက သို့မဟုတ် အတူတကွ ပူးပေါင်းဆောင်ရွက်လိုပါက ဆက်သွယ်နိုင်ပါတယ်။">Feel free to reach out for
+        inquiries or collaboration.</h2>
       <div class="contact-grid">
         <div class="contact-card glass-card reveal">
-          <h3>Send a message</h3>
+          <h3 data-en="Send a Message" data-mm="မက်ဆေ့ခ်ျ ပေးပို့ရန်">Send a Message</h3>
           <form>
             <div class="form-group">
-              <label for="name">Name</label>
-              <input id="name" type="text" placeholder="Your name" />
+              <label for="name" data-en="Name" data-mm="အမည်">Name</label>
+              <input id="name" type="text" placeholder="Your Name" />
             </div>
             <div class="form-group">
-              <label for="email">Email</label>
+              <label for="email" data-en="Email" data-mm="အီးမေးလ်">Email</label>
               <input id="email" type="email" placeholder="you@example.com" />
             </div>
             <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" placeholder="Tell me about your project..."></textarea>
+              <label for="message" data-en="Message" data-mm="မက်ဆေ့ခ်ျ">Message</label>
+              <textarea id="message" placeholder="Write your message..."></textarea>
             </div>
-            <button class="btn btn-primary" type="button"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+            <button class="btn btn-primary" type="button"><i class="fa-solid fa-paper-plane"></i> <span
+                data-en="Send Message" data-mm="ပေးပို့ရန်">Send Message</span></button>
           </form>
         </div>
         <div class="contact-card glass-card reveal">
-          <h3>Connect</h3>
-          <p><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</p>
-          <p><i class="fa-solid fa-envelope"></i> hello@portfolio.dev</p>
-          <p><i class="fa-brands fa-github"></i> github.com/portfolio</p>
-          <p><i class="fa-brands fa-linkedin-in"></i> linkedin.com/in/portfolio</p>
+          <h3 data-en="Contact Details" data-mm="ဆက်သွယ်ရန် အချက်အလက်များ">Contact Details</h3>
+          <p><i class="fa-solid fa-location-dot"></i> <span data-en="Available Online / Remote"
+              data-mm="Online / Remote မှတစ်ဆင့် ဆက်သွယ်နိုင်ပါသည်။">Available Online / Remote</span></p>
+          <p><i class="fa-solid fa-envelope"></i> your-email@example.com</p>
+          <p><i class="fa-brands fa-github"></i> github.com/shinenyi123</p>
+          <p><i class="fa-brands fa-linkedin-in"></i> linkedin.com/in/yourprofile</p>
           <div class="socials" style="margin-top:1rem;">
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/shinenyi123" target="_blank" rel="noreferrer"><i
+                class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:your-email@example.com"><i class="fa-solid fa-envelope"></i></a>
           </div>
         </div>
       </div>
@@ -497,11 +525,11 @@
 
   <footer class="footer">
     <div class="container">
-      <div>� 2026 Software Developer. All rights reserved.</div>
+      <div>© 2026 Student Software Developer. All rights reserved.</div>
       <div class="footer-links">
-        <a href="#home">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#home" data-en="Home" data-mm="ပင်မစာမျက်နှာ">Home</a>
+        <a href="#projects" data-en="Projects" data-mm="Project များ">Projects</a>
+        <a href="#contact" data-en="Contact" data-mm="ဆက်သွယ်ရန်">Contact</a>
       </div>
     </div>
   </footer>
@@ -509,6 +537,48 @@
   <a href="#home" id="backToTop" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
 
   <script src="assets/js/main.js"></script>
+
+  <script>
+    // Language Toggle Functionality
+    document.addEventListener('DOMContentLoaded', () => {
+      const langToggleBtn = document.getElementById('langToggle');
+      const langLabel = document.getElementById('langLabel');
+
+      // Load saved language or default to 'en'
+      let currentLang = localStorage.getItem('selectedLanguage') || 'en';
+
+      function updateLanguage(lang) {
+        currentLang = lang;
+        localStorage.setItem('selectedLanguage', lang);
+
+        // Update label text based on current language
+        if (langLabel) {
+          langLabel.textContent = lang === 'en' ? 'MM' : 'EN';
+        }
+
+        // Update all elements with data-en and data-mm attributes
+        const translatableElements = document.querySelectorAll('[data-en][data-mm]');
+        translatableElements.forEach(el => {
+          if (lang === 'mm') {
+            el.textContent = el.getAttribute('data-mm');
+          } else {
+            el.textContent = el.getAttribute('data-en');
+          }
+        });
+      }
+
+      // Initialize language
+      updateLanguage(currentLang);
+
+      // Toggle click handler
+      if (langToggleBtn) {
+        langToggleBtn.addEventListener('click', () => {
+          const newLang = currentLang === 'en' ? 'mm' : 'en';
+          updateLanguage(newLang);
+        });
+      }
+    });
+  </script>
 </body>
 
 </html>
