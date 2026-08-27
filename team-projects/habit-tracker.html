@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Project Detail | Habit Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body>
+    <div id="progress-bar"></div>
+    <div class="loading-screen">
+        <div class="loader"></div>
+    </div>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="brand"><span class="brand-mark"><i class="fa-solid fa-code"></i></span>
+                Portfolio</a>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle"><i class="fa-solid fa-moon"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="detail-page container">
+        <section class="detail-hero reveal glass-card">
+            <div class="detail-hero-grid">
+                <div class="detail-hero-content">
+                    <div class="section-title"><i class="fa-solid fa-calendar-check"></i> Team Project</div>
+                    <h1 class="section-heading">Habit Tracker</h1>
+                    <p class="section-copy">A reliable web application designed to help users systematically record
+                        daily habits, monitor their completions, and review their progress through meaningful
+                        statistics. The platform combines secure data management with interactive tracking features to
+                        build consistency.</p>
+                    <div class="hero-metrics">
+                        <span class="metric-pill"><i class="fa-solid fa-chart-line"></i> Progress Tracking</span>
+                        <span class="metric-pill"><i class="fa-solid fa-database"></i> PostgreSQL & SQLite</span>
+                        <span class="metric-pill"><i class="fa-solid fa-calendar-days"></i> Custom Scheduling</span>
+                    </div>
+                    <div class="card-actions">
+                        <a class="btn btn-primary" href="#"><i class="fa-solid fa-globe"></i> Live Demo</a>
+                        <a class="btn btn-secondary" href="#"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-highlights glass-card">
+                    <h3><i class="fa-solid fa-chart-line"></i> Project Snapshot</h3>
+                    <ul class="detail-list">
+                        <li><span>Project Name</span><strong>Habit Tracker</strong></li>
+                        <li><span>Team Name</span><strong>CodeTogether</strong></li>
+                        <li><span>My Role</span><strong>Team Leader</strong></li>
+                        <li><span>Stack</span><strong>HTML, CSS, JS, Python, Flask, PostgreSQL</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="detail-grid reveal">
+            <div class="detail-card glass-card">
+                <div class="section-title"><i class="fa-solid fa-users"></i> Team Information</div>
+                <h3>Team Name: CodeTogether</h3>
+                <p><strong>My Role:</strong> Team Leader</p>
+                <p class="section-copy">I led a collaborative effort to integrate frontend, backend, database, and
+                    statistics modules into a cohesive, user-friendly habit tracking system.</p>
+            </div>
+
+            <div class="detail-card glass-card">
+                <div class="section-title"><i class="fa-solid fa-list-check"></i> My Responsibilities</div>
+                <ul class="detail-list bullets">
+                    <li>Planned the core system architecture and functional requirements.</li>
+                    <li>Designed the database schema to handle isolated user data and schedule types.</li>
+                    <li>Developed the habit tracking logic for daily logging, working time, and streak calculations.
+                    </li>
+                    <li>Implemented REST APIs using Python and Flask for dynamic data exchange.</li>
+                    <li>Integrated Chart.js on the frontend to visualize monthly progress and completion rates.</li>
+                    <li>Ensured seamless theme preference handling using browser local storage.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="reveal">
+            <div class="section-heading-row">
+                <div class="section-title"><i class="fa-solid fa-diagram-project"></i> Software Lifecycle</div>
+                <h2 class="section-heading">Development Process</h2>
+            </div>
+            <div class="timeline-grid">
+                <article class="timeline-card glass-card">
+                    <span class="timeline-step">01</span>
+                    <h3>Requirements & Planning</h3>
+                    <p>Defined the primary goal: building a simple, reliable system for users to track daily habits and
+                        understand their consistency.</p>
+                </article>
+                <article class="timeline-card glass-card">
+                    <span class="timeline-step">02</span>
+                    <h3>Database Design</h3>
+                    <p>Structured the SQLite/PostgreSQL schema for secure user authentication, habit profiles, and daily
+                        completion logs.</p>
+                </article>
+                <article class="timeline-card glass-card">
+                    <span class="timeline-step">03</span>
+                    <h3>Habit Engine Implementation</h3>
+                    <p>Built the core backend logic to support specific weekday schedules and custom repeat patterns.
+                    </p>
+                </article>
+                <article class="timeline-card glass-card">
+                    <span class="timeline-step">04</span>
+                    <h3>Frontend & UI Development</h3>
+                    <p>Crafted a responsive user interface with built-in theme switching (Dark/Light mode) saved in
+                        local storage.</p>
+                </article>
+                <article class="timeline-card glass-card">
+                    <span class="timeline-step">05</span>
+                    <h3>Statistics Integration</h3>
+                    <p>Integrated Chart.js to visually display metrics like total working time, current streaks, and
+                        daily completion rates.</p>
+                </article>
+                <article class="timeline-card glass-card">
+                    <span class="timeline-step">06</span>
+                    <h3>Testing & Deployment</h3>
+                    <p>Tested data isolation, validated API endpoints, and prepared the application for production
+                        hosting.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="reveal">
+            <div class="section-heading-row">
+                <div class="section-title"><i class="fa-solid fa-star"></i> Product Highlights</div>
+                <h2 class="section-heading">Key Features</h2>
+            </div>
+            <div class="feature-grid">
+                <article class="feature-card glass-card">
+                    <div class="icon-pill"><i class="fa-solid fa-user-check"></i></div>
+                    <h3>User Authentication</h3>
+                    <p>Secure registration, login, and password hashing with isolated data management per user.</p>
+                </article>
+                <article class="feature-card glass-card">
+                    <div class="icon-pill"><i class="fa-solid fa-list-check"></i></div>
+                    <h3>Habit Management</h3>
+                    <p>Easily create, name, modify, and delete habits with defined start and end times.</p>
+                </article>
+                <article class="feature-card glass-card">
+                    <div class="icon-pill"><i class="fa-solid fa-calendar-week"></i></div>
+                    <h3>Flexible Scheduling</h3>
+                    <p>Support for weekly schedules on specific weekdays or custom repeat patterns.</p>
+                </article>
+                <article class="feature-card glass-card">
+                    <div class="icon-pill"><i class="fa-solid fa-check-double"></i></div>
+                    <h3>Daily Tracking</h3>
+                    <p>Log everyday completions and seamlessly tie daily progress to customized schedules.</p>
+                </article>
+                <article class="feature-card glass-card">
+                    <div class="icon-pill"><i class="fa-solid fa-chart-pie"></i></div>
+                    <h3>Interactive Statistics</h3>
+                    <p>View completion rates, total working time, current streaks, and monthly progress graphs.</p>
+                </article>
+                <article class="feature-card glass-card">
+                    <div class="icon-pill"><i class="fa-solid fa-database"></i></div>
+                    <h3>Reliable Storage</h3>
+                    <p>Utilizes SQLite for local development and PostgreSQL for scalable production data.</p>
+                </article>
+                <article class="feature-card glass-card">
+                    <div class="icon-pill"><i class="fa-solid fa-moon"></i></div>
+                    <h3>Persistent Themes</h3>
+                    <p>Dark and Light modes powered by browser local storage to remember user preferences.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="detail-grid reveal">
+            <div class="detail-card glass-card">
+                <div class="section-title"><i class="fa-solid fa-sitemap"></i> System Architecture</div>
+                <div class="architecture-diagram">
+                    <div class="arch-node"><i class="fa-solid fa-user"></i> User</div>
+                    <div class="arch-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                    <div class="arch-node"><i class="fa-solid fa-laptop"></i> Frontend UI</div>
+                    <div class="arch-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                    <div class="arch-node"><i class="fa-solid fa-server"></i> Flask APIs</div>
+                    <div class="arch-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                    <div class="arch-node"><i class="fa-solid fa-lock"></i> Authentication</div>
+                    <div class="arch-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                    <div class="arch-node"><i class="fa-solid fa-bars-progress"></i> Tracking Engine</div>
+                    <div class="arch-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                    <div class="arch-node"><i class="fa-solid fa-database"></i> PostgreSQL</div>
+                    <div class="arch-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                    <div class="arch-node"><i class="fa-solid fa-chart-column"></i> Statistics Dashboard</div>
+                </div>
+            </div>
+
+            <div class="detail-card glass-card">
+                <div class="section-title"><i class="fa-solid fa-layer-group"></i> Technology Stack</div>
+                <div class="stack-group">
+                    <div class="stack-card">
+                        <h4>Frontend</h4>
+                        <div class="badge-row">
+                            <span class="badge-pill">HTML</span>
+                            <span class="badge-pill">CSS</span>
+                            <span class="badge-pill">JavaScript</span>
+                            <span class="badge-pill">Chart.js</span>
+                        </div>
+                    </div>
+                    <div class="stack-card">
+                        <h4>Backend</h4>
+                        <div class="badge-row">
+                            <span class="badge-pill">Python</span>
+                            <span class="badge-pill">Flask</span>
+                            <span class="badge-pill">REST API</span>
+                        </div>
+                    </div>
+                    <div class="stack-card">
+                        <h4>Database</h4>
+                        <div class="badge-row">
+                            <span class="badge-pill">PostgreSQL</span>
+                            <span class="badge-pill">SQLite</span>
+                        </div>
+                    </div>
+                    <div class="stack-card">
+                        <h4>Storage & UI State</h4>
+                        <div class="badge-row">
+                            <span class="badge-pill">Local Storage</span>
+                        </div>
+                    </div>
+                    <div class="stack-card">
+                        <h4>Version Control</h4>
+                        <div class="badge-row">
+                            <span class="badge-pill">Git</span>
+                            <span class="badge-pill">GitHub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="detail-grid reveal">
+            <div class="detail-card glass-card">
+                <div class="section-title"><i class="fa-solid fa-sitemap"></i> Database Design</div>
+                <div class="erd-diagram">
+                    <div class="erd-node primary">
+                        <h4>Users</h4>
+                        <span>id, name, email, password</span>
+                    </div>
+                    <div class="erd-connector"><i class="fa-solid fa-arrows-left-right"></i></div>
+                    <div class="erd-node">
+                        <h4>Habits</h4>
+                        <span>id, user_id, name, schedule_type</span>
+                    </div>
+                    <div class="erd-connector"><i class="fa-solid fa-arrows-left-right"></i></div>
+                    <div class="erd-node">
+                        <h4>Daily Logs</h4>
+                        <span>id, habit_id, date, status</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail-card glass-card">
+                <div class="section-title"><i class="fa-solid fa-triangle-exclamation"></i> Challenges</div>
+                <div class="pill-list">
+                    <span class="pill-card">Calculating dynamic current/longest streaks</span>
+                    <span class="pill-card">Handling complex custom repeating schedules</span>
+                    <span class="pill-card">Integrating Chart.js with dynamic backend APIs</span>
+                    <span class="pill-card">Maintaining user data isolation securely</span>
+                    <span class="pill-card">Migrating local SQLite to production PostgreSQL</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="detail-grid reveal">
+            <div class="detail-card glass-card">
+                <div class="section-title"><i class="fa-solid fa-graduation-cap"></i> Lessons Learned</div>
+                <div class="pill-list">
+                    <span class="pill-card">Data Visualization (Chart.js)</span>
+                    <span class="pill-card">REST API Architecture</span>
+                    <span class="pill-card">Relational Database Design</span>
+                    <span class="pill-card">Client-side State Management</span>
+                    <span class="pill-card">Python Flask Routing</span>
+                    <span class="pill-card">Team Collaboration via Git</span>
+                </div>
+            </div>
+
+            <div class="detail-card glass-card">
+                <div class="section-title"><i class="fa-solid fa-forward"></i> Future Improvements</div>
+                <div class="pill-list">
+                    <span class="pill-card">Push Notifications & Reminders</span>
+                    <span class="pill-card">Social Accountability (Friends)</span>
+                    <span class="pill-card">Gamification & Badges</span>
+                    <span class="pill-card">Data Export to CSV/PDF</span>
+                    <span class="pill-card">Mobile-Native Application</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <a href="#" id="backToTop" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
