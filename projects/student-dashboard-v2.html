@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Student Dashboard Version 2 project case study." />
+    <title>Student Dashboard Version 2 | Project Case Study</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body class="auth-case-study">
+    <div id="progress-bar"></div>
+    <div class="cursor-glow"></div>
+    <div class="loading-screen">
+        <div class="loader"></div>
+    </div>
+    <nav class="navbar">
+        <div class="container"><a href="../index.html" class="brand"><span class="brand-mark"><i
+                        class="fa-solid fa-code"></i></span><span>Portfolio</span></a>
+            <div class="nav-actions">
+                <div class="language-switch" role="group" aria-label="Language switch"><button
+                        class="language-option active" type="button" data-language="en">EN</button><span
+                        aria-hidden="true">|</span><button class="language-option" type="button"
+                        data-language="mm">မြန်မာ</button></div><button class="theme-toggle" id="themeToggle"
+                    aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+            </div>
+        </div>
+    </nav>
+    <main class="detail-page container">
+        <section class="auth-hero reveal">
+            <div class="auth-hero-copy">
+                <div class="section-title" data-en="Personal Project Case Study"
+                    data-mm="ကိုယ်ပိုင် Project Case Study">Personal Project Case Study</div>
+                <h1 class="hero-title" data-en="STUDENT DASHBOARD — VERSION 2" data-mm="STUDENT DASHBOARD — VERSION 2">
+                    STUDENT DASHBOARD — VERSION 2</h1>
+                <p class="hero-subtitle"
+                    data-en="An independent Flask and PostgreSQL student-data management application for Excel upload, validation, editable bug review, student records, filtering, summaries, and exports."
+                    data-mm="Excel upload, validation, editable bug review, student records, filtering, summaries နှင့် exports များကို လုပ်ဆောင်ပေးသော Flask နှင့် PostgreSQL အခြေခံ student-data management application တစ်ခုဖြစ်ပါတယ်။">
+                    An independent Flask and PostgreSQL student-data management application for Excel upload,
+                    validation, editable bug review, student records, filtering, summaries, and exports.</p>
+                <div class="hero-metrics"><span class="metric-pill"><i class="fa-solid fa-flask"></i> Flask</span><span
+                        class="metric-pill"><i class="fa-solid fa-database"></i> PostgreSQL</span><span
+                        class="metric-pill"><i class="fa-solid fa-file-excel"></i> Excel workflow</span></div>
+                <div class="card-actions"><a class="btn btn-primary"
+                        href="https://student-dashboard-v2.onrender.com/"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i><span data-en="Open Live Dashboard"
+                            data-mm="Live Dashboard ဖွင့်ရန်">Open Live Dashboard</span></a><a class="btn btn-secondary"
+                        href="https://github.com/shinenyi123/Student_Dashboard_V2"><i class="fa-brands fa-github"></i>
+                        GitHub</a><a class="btn btn-secondary" href="../index.html#projects"><i
+                            class="fa-solid fa-arrow-left"></i><span data-en="Back to Projects"
+                            data-mm="Project များသို့ ပြန်သွားရန်">Back to Projects</span></a></div>
+            </div>
+            <div class="case-study-signal">
+                <div class="signal-label">V2 ARCHITECTURE</div>
+                <div class="signal-stack"><span>Browser</span><i class="fa-solid fa-arrow-down"></i><span>Student
+                        Dashboard V2</span><i class="fa-solid fa-arrow-down"></i><span>PostgreSQL + local Flask
+                        session</span></div>
+                <p data-en="Independent student-data application with a related authentication dependency."
+                    data-mm="သီးခြား student-data application ဖြစ်ပြီး related authentication dependency တစ်ခု ရှိပါတယ်။">
+                    Independent student-data application with a related authentication dependency.</p>
+            </div>
+        </section>
+
+        <section class="reveal">
+            <div class="section-title" data-en="Project Overview" data-mm="Project အကျဉ်းချုပ်">Project Overview</div>
+            <h2 class="section-heading" data-en="Student records, Excel processing, and practical reporting."
+                data-mm="Student records, Excel processing နှင့် လက်တွေ့ reporting.">Student records, Excel processing,
+                and practical reporting.</h2>
+            <p class="section-copy"
+                data-en="Student Dashboard V2 manages student records in PostgreSQL, accepts Excel files, validates uploaded data, provides an editable bug-review workflow, and exports processed data. It also supports filtering, student statistics, grade/class summaries, theme switching, and a local Flask session/login."
+                data-mm="Student Dashboard V2 သည် PostgreSQL ထဲတွင် student records များကို စီမံပြီး Excel ဖိုင်များကို လက်ခံကာ uploaded data ကို validate ပြုလုပ်ပါတယ်။ Editable bug-review workflow နှင့် processed data export များအပြင် filtering, student statistics, grade/class summaries, theme switching နှင့် local Flask session/login ကိုလည်း support လုပ်ပါတယ်။">
+                Student Dashboard V2 manages student records in PostgreSQL, accepts Excel files, validates uploaded
+                data, provides an editable bug-review workflow, and exports processed data. It also supports filtering,
+                student statistics, grade/class summaries, theme switching, and a local Flask session/login.</p>
+            <div class="feature-grid auth-feature-grid">
+                <article class="feature-card glass-card"><i class="feature-icon fa-solid fa-users"></i>
+                    <h3 data-en="Student Records" data-mm="Student Records">Student Records</h3>
+                    <p data-en="Manage student data stored in PostgreSQL."
+                        data-mm="PostgreSQL ထဲတွင် သိမ်းဆည်းထားသော student data များကို စီမံပါ။">Manage student data
+                        stored in PostgreSQL.</p>
+                </article>
+                <article class="feature-card glass-card"><i class="feature-icon fa-solid fa-filter"></i>
+                    <h3 data-en="Filtering & Summaries" data-mm="Filtering နှင့် Summaries">Filtering & Summaries</h3>
+                    <p data-en="Filter records and view student statistics plus grade/class summaries."
+                        data-mm="Records များကို filter ပြုလုပ်ပြီး student statistics နှင့် grade/class summaries များကို ကြည့်ရှုပါ။">
+                        Filter records and view student statistics plus grade/class summaries.</p>
+                </article>
+                <article class="feature-card glass-card"><i class="feature-icon fa-solid fa-palette"></i>
+                    <h3 data-en="Theme & Local Session" data-mm="Theme နှင့် Local Session">Theme & Local Session</h3>
+                    <p data-en="Use theme switching and the application's local Flask session/login."
+                        data-mm="Theme switching နှင့် application ၏ local Flask session/login ကို အသုံးပြုပါ။">Use
+                        theme switching and the application's local Flask session/login.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="reveal">
+            <div class="section-title" data-en="Architecture" data-mm="ဖွဲ့စည်းပုံ">Architecture</div>
+            <h2 class="section-heading" data-en="V2 owns the student-data workflow."
+                data-mm="V2 က student-data workflow ကို ကိုယ်တိုင် စီမံပါတယ်။">V2 owns the student-data workflow.</h2>
+            <p class="section-copy"
+                data-en="The Student Dashboard V2 is a separate application. Its Flask routes handle student data processing, Excel validation, bug review, filtering, summaries, exports, and local sessions. Central Authentication Service is a related external project used for shared authentication data, not a module inside this application."
+                data-mm="Student Dashboard V2 သည် သီးခြား application တစ်ခုဖြစ်ပါတယ်။ Flask routes များက student data processing, Excel validation, bug review, filtering, summaries, exports နှင့် local sessions များကို ကိုင်တွယ်ပါတယ်။ Central Authentication Service သည် related external project ဖြစ်ပြီး ဤ application အတွင်းရှိ module မဟုတ်ပါ။">
+                The Student Dashboard V2 is a separate application. Its Flask routes handle student data processing,
+                Excel validation, bug review, filtering, summaries, exports, and local sessions. Central Authentication
+                Service is a related external project used for shared authentication data, not a module inside this
+                application.</p>
+            <div class="architecture-flow glass-card">
+                <div class="flow-node"><i class="fa-solid fa-globe"></i><strong>Browser</strong></div>
+                <div class="flow-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                <div class="flow-node accent-node"><i class="fa-solid fa-table-columns"></i><strong>Student Dashboard
+                        V2</strong><small>Flask routes · data processing · local session</small></div>
+                <div class="flow-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                <div class="flow-node"><i class="fa-solid fa-file-excel"></i><strong>Excel validation</strong><small>bug
+                        review · filtering · exports</small></div>
+                <div class="flow-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                <div class="flow-node"><i class="fa-solid fa-database"></i><strong>PostgreSQL</strong><small>student
+                        records · statistics · summaries</small></div>
+            </div>
+        </section>
+
+        <section class="excel-workflow reveal">
+            <div class="section-title" data-en="Excel Data Workflow" data-mm="Excel Data Workflow">Excel Data Workflow
+            </div>
+            <h2 class="section-heading" data-en="From uploaded workbook to processed student data."
+                data-mm="တင်သွင်းထားသော workbook မှ processed student data အထိ။">From uploaded workbook to processed
+                student data.</h2>
+            <p class="section-copy"
+                data-en="The Student Dashboard accepts Excel data as input, validates the records, identifies duplicate roll numbers, incomplete rows, and invalid dates, and allows clean data to be imported into PostgreSQL. Processed student data can be exported into normal and normalized Excel files, including a summary export."
+                data-mm="Student Dashboard သည် Excel ဖိုင်များကို input အဖြစ်လက်ခံပြီး records များကို validate ပြုလုပ်ကာ duplicate roll numbers၊ incomplete rows နှင့် invalid dates များကို ရှာဖွေစစ်ဆေးပါတယ်။ ပြင်ဆင်ပြီးသော data များကို PostgreSQL ထဲသို့ import ပြုလုပ်နိုင်ပြီး normal, normalized နှင့် summary Excel files များအဖြစ် export ပြုလုပ်နိုင်ပါတယ်။">
+                The Student Dashboard accepts Excel data as input, validates the records, identifies duplicate roll
+                numbers, incomplete rows, and invalid dates, and allows clean data to be imported into PostgreSQL.
+                Processed student data can be exported into normal and normalized Excel files, including a summary
+                export.</p>
+            <div class="excel-flow-visual">
+                <div class="excel-file-grid">
+                    <article class="excel-file-card glass-card">
+                        <div class="excel-file-type">INPUT EXCEL</div>
+                        <h3>STUDENT_DATA_INPUT.XLSX</h3>
+                        <div class="excel-preview" role="img" aria-label="Input Excel Preview placeholder"><img
+                                class="card-image" src="images/input_excel.png" alt="web assistant interface" />
+                        </div>
+                        <p data-en="Input file used by the system."
+                            data-mm="System က အသုံးပြုသော input file ဖြစ်ပါသည်။">Input file used by the system.</p>
+                    </article>
+                    <article class="excel-file-card glass-card">
+                        <div class="excel-file-type">OUTPUT — NORMAL FILE</div>
+                        <h3>STUDENT_DATA_NORMAL.XLSX</h3>
+                        <div class="excel-preview" role="img" aria-label="Normal Excel output preview placeholder">
+                            <img class="card-image" src="images/normal_file.png" alt="web assistant interface" />
+                        </div>
+                        <p data-en="Normal student-data export." data-mm="Normal student-data export ဖြစ်ပါသည်။">Normal
+                            student-data export.</p>
+                    </article>
+                    <article class="excel-file-card glass-card">
+                        <div class="excel-file-type">OUTPUT — NORMALIZED FILE</div>
+                        <h3>STUDENT_DATA_NORMALIZED.XLSX</h3>
+                        <div class="excel-preview" role="img" aria-label="Normalized Excel output preview placeholder">
+                            <img class="card-image" src="images/Normalized_File.png" alt="web assistant interface" />
+                        </div>
+                        <p data-en="Normalized / formatted export." data-mm="Normalized / formatted export ဖြစ်ပါသည်။">
+                            Normalized / formatted export.</p>
+                    </article>
+                </div>
+                <div class="excel-pipeline glass-card">
+                    <div class="excel-pipeline-label">TECHNICAL FLOW</div>
+                    <div class="excel-pipeline-steps"><span>INPUT EXCEL</span><i
+                            class="fa-solid fa-arrow-down"></i><span>PANDAS / OPENPYXL</span><i
+                            class="fa-solid fa-arrow-down"></i><span>VALIDATION</span><i
+                            class="fa-solid fa-arrow-down"></i><span>BUG CHECK</span><i
+                            class="fa-solid fa-arrow-down"></i><span>POSTGRESQL</span><i
+                            class="fa-solid fa-arrow-down"></i><span>EXPORT</span><i
+                            class="fa-solid fa-arrow-down"></i><span>NORMAL XLSX / NORMALIZED XLSX</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bug-validation reveal">
+            <div class="section-title" data-en="Bug Check & Data Validation" data-mm="Bug Check & Data Validation">Bug
+                Check & Data Validation</div>
+            <h2 class="section-heading" data-en="Review data problems before clean import."
+                data-mm="Clean import မပြုလုပ်မီ data ပြဿနာများကို စစ်ဆေးပါ။">Review data problems before clean import.
+            </h2>
+            <p class="section-copy"
+                data-en="Detected problems can be reviewed and corrected through the editable bug-review workflow before clean data is imported."
+                data-mm="တွေ့ရှိသော ပြဿနာများကို editable bug-review workflow မှတစ်ဆင့် ပြန်လည်စစ်ဆေးပြီး ပြင်ဆင်ကာ clean data ကို import ပြုလုပ်နိုင်ပါတယ်။">
+                Detected problems can be reviewed and corrected through the editable bug-review workflow before clean
+                data is imported.</p>
+            <div class="bug-card-grid">
+                <article class="bug-card glass-card">
+                    <div class="bug-number">01</div>
+                    <h3>DUPLICATE ROLL NUMBER</h3>
+                    <div class="bug-preview" role="img" aria-label="Duplicate roll number screenshot placeholder">
+                        <img class="card-image" src="images/school_number_bug.png" alt="web assistant interface" />
+                    </div>
+                    <p class="bug-description" data-en="Duplicate school-entry/roll numbers detected."
+                        data-mm="ကျောင်းဝင်အမှတ် ထပ်နေခြင်း">Duplicate school-entry/roll numbers detected.</p>
+                    <p class="bug-detail"
+                        data-en="Duplicate student/roll numbers are detected in the uploaded Excel data."
+                        data-mm="Upload ပြုလုပ်ထားသော Excel data ထဲရှိ student/roll numbers ထပ်နေမှုကို ရှာဖွေစစ်ဆေးပါတယ်။">
+                        Duplicate student/roll numbers are detected in the uploaded Excel data.</p>
+                </article>
+                <article class="bug-card glass-card">
+                    <div class="bug-number">02</div>
+                    <h3>INCOMPLETE / EMPTY FIELDS</h3>
+                    <div class="bug-preview" role="img" aria-label="Incomplete fields screenshot placeholder">
+                        <img class="card-image" src="images/emptly_bug.png" alt="web assistant interface" />
+                        <p class="bug-description" data-en="Required student data is missing."
+                            data-mm="နေရာလွတ်ရှိနေခြင်း">
+                            Required student data is missing.</p>
+                        <p class="bug-detail" data-en="Rows or cells with missing required information are detected."
+                            data-mm="လိုအပ်သော အချက်အလက်များ မပြည့်စုံသော rows သို့မဟုတ် cells များကို ရှာဖွေစစ်ဆေးပါတယ်။">
+                            Rows or cells with missing required information are detected.</p>
+                </article>
+                <article class="bug-card glass-card">
+                    <div class="bug-number">03</div>
+                    <h3>INVALID DATE FORMAT</h3>
+                    <div class="bug-preview" role="img" aria-label="Invalid date format screenshot placeholder">
+                        <img class="card-image" src="images/datetimeBug.png" alt="web assistant interface" />
+                        <p class="bug-description" data-en="Invalid date format detected."
+                            data-mm="Date format မမှန်ခြင်း">
+                            Invalid date format detected.</p>
+                        <p class="bug-detail" data-en="Date values are checked against the expected format: DD-MM-YYYY."
+                            data-mm="Date values များကို သတ်မှတ်ထားသော DD-MM-YYYY format နှင့် စစ်ဆေးပါတယ်။">
+                            Date values are checked against the expected format: <code>DD-MM-YYYY</code>.</p>
+                    </div>
+            </div>
+            <p class="bug-description" data-en="Invalid date format detected." data-mm="Date format မမှန်ခြင်း">
+                Invalid date format detected.</p>
+            <p class="bug-detail" data-en="Date values are checked against the expected format: DD-MM-YYYY."
+                data-mm="Date values များကို သတ်မှတ်ထားသော DD-MM-YYYY format နှင့် စစ်ဆေးပါတယ်။">Date values are
+                checked against the expected format: <code>DD-MM-YYYY</code>.</p>
+            </article>
+            </div>
+            <div class="bug-flow glass-card">
+                <div class="bug-flow-label">BUG CHECK FLOW</div>
+                <div class="bug-flow-track"><span>EXCEL INPUT</span><i class="fa-solid fa-arrow-down"></i><span>DATA
+                        VALIDATION</span><i class="fa-solid fa-arrow-down"></i><span>BUG CHECK</span>
+                    <div class="bug-flow-branches"><span>DUPLICATE ROLL NUMBER</span><span>INCOMPLETE / EMPTY
+                            FIELDS</span><span>INVALID DATE FORMAT</span></div><i
+                        class="fa-solid fa-arrow-down"></i><span>FIX / REVIEW</span><i
+                        class="fa-solid fa-arrow-down"></i><span>CLEAN DATA IMPORT</span><i
+                        class="fa-solid fa-arrow-down"></i><span>POSTGRESQL</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="detail-grid reveal">
+            <div class="detail-card glass-card">
+                <div class="section-title" data-en="Related Project" data-mm="ဆက်စပ် Project">Related Project</div>
+                <h2>Central Authentication Service</h2>
+                <p data-en="Student Dashboard V2 is an independent student-data application. Central Authentication Service is a separate related project that provides central authentication data; it is not part of this project's Excel, validation, or dashboard implementation."
+                    data-mm="Student Dashboard V2 သည် သီးခြား student-data application ဖြစ်ပါတယ်။ Central Authentication Service သည် central authentication data ပေးသော သီးခြား related project ဖြစ်ပြီး ဤ project ၏ Excel, validation သို့မဟုတ် dashboard implementation ၏ အစိတ်အပိုင်း မဟုတ်ပါ။">
+                    Student Dashboard V2 is an independent student-data application. Central Authentication Service is a
+                    separate related project that provides central authentication data; it is not part of this project's
+                    Excel, validation, or dashboard implementation.</p><a class="external-link"
+                    href="central-authentication-system.html">CENTRAL AUTHENTICATION SERVICE <i
+                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <div class="detail-card glass-card">
+                <div class="section-title" data-en="Screenshots" data-mm="Screenshots">Screenshots</div>
+                <div class="screens-grid">
+                    <div><i class="fa-solid fa-table-columns"></i><strong>Student Dashboard V2</strong>
+                        <img src="images/student_dashboard_version2.png" alt="Student Dashboard V2" />
+                    </div>
+                    <div><i class="fa-solid fa-chart-line"></i><strong>Statistics & Summaries</strong>
+                        <img src="images/summary.png" alt="Statistics & Summaries" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="screenshot-lightbox" id="screenshotLightbox" role="dialog" aria-modal="true"
+        aria-label="Expanded screenshot preview">
+        <button class="screenshot-lightbox-close" id="screenshotLightboxClose" type="button"
+            aria-label="Close screenshot preview">&times;</button>
+        <img id="screenshotLightboxImage" src="" alt="" />
+    </div>
+    <a href="#" id="backToTop" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+    <footer class="footer">
+        <div class="container"><span>Student Dashboard — Version 2</span><a href="../index.html">Portfolio Home</a>
+        </div>
+    </footer>
+    <script src="../assets/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => { const buttons = document.querySelectorAll('.language-option'); const translatable = document.querySelectorAll('[data-en][data-mm]'); const savedLanguage = localStorage.getItem('selectedLanguage') || 'en'; function setLanguage(language) { document.documentElement.lang = language === 'mm' ? 'my' : 'en'; translatable.forEach((element) => { element.textContent = element.dataset[language]; }); buttons.forEach((button) => button.classList.toggle('active', button.dataset.language === language)); localStorage.setItem('selectedLanguage', language); } buttons.forEach((button) => button.addEventListener('click', () => setLanguage(button.dataset.language))); setLanguage(savedLanguage); });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const lightbox = document.getElementById('screenshotLightbox');
+            const lightboxImage = document.getElementById('screenshotLightboxImage');
+            const closeButton = document.getElementById('screenshotLightboxClose');
+            const screenshots = document.querySelectorAll('.excel-preview img, .bug-preview img, .screens-grid img');
+
+            function closeLightbox() {
+                lightbox.classList.remove('is-open');
+                lightboxImage.src = '';
+                document.body.style.overflow = '';
+            }
+
+            screenshots.forEach((screenshot) => {
+                screenshot.setAttribute('tabindex', '0');
+                screenshot.addEventListener('click', () => {
+                    lightboxImage.src = screenshot.currentSrc || screenshot.src;
+                    lightboxImage.alt = screenshot.alt;
+                    lightbox.classList.add('is-open');
+                    document.body.style.overflow = 'hidden';
+                    closeButton.focus();
+                });
+                screenshot.addEventListener('keydown', (event) => {
+                    if (event.key === 'Enter' || event.key === ' ') {
+                        event.preventDefault();
+                        screenshot.click();
+                    }
+                });
+            });
+
+            closeButton.addEventListener('click', closeLightbox);
+            lightbox.addEventListener('click', (event) => {
+                if (event.target === lightbox) closeLightbox();
+            });
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape' && lightbox.classList.contains('is-open')) closeLightbox();
+            });
+        });
+    </script>
+</body>
+
+</html>
