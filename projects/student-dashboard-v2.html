@@ -62,9 +62,11 @@
                 <div class="signal-stack"><span>Browser</span><i class="fa-solid fa-arrow-down"></i><span>Student
                         Dashboard V2</span><i class="fa-solid fa-arrow-down"></i><span>PostgreSQL + local Flask
                         session</span></div>
-                <p data-en="Independent student-data application with a related authentication dependency."
-                    data-mm="သီးခြား student-data application ဖြစ်ပြီး related authentication dependency တစ်ခု ရှိပါတယ်။">
-                    Independent student-data application with a related authentication dependency.</p>
+                <p data-en="Independent student-data application with database-level integration to Auth Service and separate local session handling."
+                    data-mm="Auth Service နှင့် database-level integration ပြုလုပ်ထားပြီး သီးခြား local session handling ရှိသော student-data application ဖြစ်ပါတယ်။">
+                    Independent student-data application with database-level integration to Auth Service and separate
+                    local
+                    session handling.</p>
             </div>
         </section>
 
@@ -106,12 +108,16 @@
             <h2 class="section-heading" data-en="V2 owns the student-data workflow."
                 data-mm="V2 က student-data workflow ကို ကိုယ်တိုင် စီမံပါတယ်။">V2 owns the student-data workflow.</h2>
             <p class="section-copy"
-                data-en="The Student Dashboard V2 is a separate application. Its Flask routes handle student data processing, Excel validation, bug review, filtering, summaries, exports, and local sessions. Central Authentication Service is a related external project used for shared authentication data, not a module inside this application."
-                data-mm="Student Dashboard V2 သည် သီးခြား application တစ်ခုဖြစ်ပါတယ်။ Flask routes များက student data processing, Excel validation, bug review, filtering, summaries, exports နှင့် local sessions များကို ကိုင်တွယ်ပါတယ်။ Central Authentication Service သည် related external project ဖြစ်ပြီး ဤ application အတွင်းရှိ module မဟုတ်ပါ။">
+                data-en="Student Dashboard V2 is an independent Flask web application. Its Flask routes handle student data processing, Excel validation, bug review, filtering, summaries, exports, and its own local session. User registration and password management are handled by the separate Auth Service; after account creation, users access the Student Dashboard login separately. Student Dashboard verifies credentials using the shared user database, then creates its own session. This is database-level integration, not API-based Single Sign-On."
+                data-mm="Student Dashboard V2 သည် သီးခြား Flask web application ဖြစ်ပါတယ်။ Flask routes များက student data processing, Excel validation, bug review, filtering, summaries, exports နှင့် ကိုယ်ပိုင် local session ကို ကိုင်တွယ်ပါတယ်။ User registration နှင့် password management ကို သီးခြား Auth Service က ကိုင်တွယ်ပြီး account ဖန်တီးပြီးနောက် Student Dashboard login မှတစ်ဆင့် သီးခြားဝင်ရောက်ရပါတယ်။ Student Dashboard က shared user database ကို အသုံးပြု၍ credentials များကို စစ်ဆေးပြီးနောက် ကိုယ်ပိုင် session ကို ဖန်တီးပါတယ်။ ဤ connection သည် API-based Single Sign-On မဟုတ်ဘဲ database-level integration ဖြစ်ပါတယ်။">
                 The Student Dashboard V2 is a separate application. Its Flask routes handle student data processing,
-                Excel validation, bug review, filtering, summaries, exports, and local sessions. Central Authentication
-                Service is a related external project used for shared authentication data, not a module inside this
-                application.</p>
+                Excel validation, bug review, filtering, summaries, exports, and its own local session. User
+                registration
+                and password management are handled by the separate Auth Service; after account creation, users access
+                the
+                Student Dashboard login separately. Student Dashboard verifies credentials using the shared user
+                database,
+                then creates its own session. This is database-level integration, not API-based Single Sign-On.</p>
             <div class="architecture-flow glass-card">
                 <div class="flow-node"><i class="fa-solid fa-globe"></i><strong>Browser</strong></div>
                 <div class="flow-arrow"><i class="fa-solid fa-arrow-down"></i></div>
@@ -179,6 +185,17 @@
                             class="fa-solid fa-arrow-down"></i><span>EXPORT</span><i
                             class="fa-solid fa-arrow-down"></i><span>NORMAL XLSX / NORMALIZED XLSX</span></div>
                 </div>
+            </div>
+            <div class="detail-card glass-card" style="margin-top: 1rem;">
+                <div class="section-title" data-en="Authentication Flow" data-mm="Authentication Flow">Authentication
+                    Flow</div>
+                <p class="section-copy"
+                    data-en="Auth Service handles registration and password management. After account creation, the user signs in through the Student Dashboard login. Student Dashboard checks the shared user database and creates its own application session; the two applications keep separate logic and session handling."
+                    data-mm="Auth Service က registration နှင့် password management ကို ကိုင်တွယ်ပါတယ်။ Account ဖန်တီးပြီးနောက် user က Student Dashboard login မှတစ်ဆင့် ဝင်ရောက်ပါတယ်။ Student Dashboard က shared user database ကို စစ်ဆေးပြီး ကိုယ်ပိုင် application session ကို ဖန်တီးပါတယ်။ Application နှစ်ခုသည် logic နှင့် session handling သီးခြားစီ ရှိပါတယ်။">
+                    Auth Service: registration and password management → shared user database → Student Dashboard login:
+                    credential verification → Student Dashboard local session. This is database-level integration, not
+                    API-based
+                    Single Sign-On.</p>
             </div>
         </section>
 
@@ -256,11 +273,13 @@
             <div class="detail-card glass-card">
                 <div class="section-title" data-en="Related Project" data-mm="ဆက်စပ် Project">Related Project</div>
                 <h2>Central Authentication Service</h2>
-                <p data-en="Student Dashboard V2 is an independent student-data application. Central Authentication Service is a separate related project that provides central authentication data; it is not part of this project's Excel, validation, or dashboard implementation."
-                    data-mm="Student Dashboard V2 သည် သီးခြား student-data application ဖြစ်ပါတယ်။ Central Authentication Service သည် central authentication data ပေးသော သီးခြား related project ဖြစ်ပြီး ဤ project ၏ Excel, validation သို့မဟုတ် dashboard implementation ၏ အစိတ်အပိုင်း မဟုတ်ပါ။">
-                    Student Dashboard V2 is an independent student-data application. Central Authentication Service is a
-                    separate related project that provides central authentication data; it is not part of this project's
-                    Excel, validation, or dashboard implementation.</p><a class="external-link"
+                <p data-en="Student Dashboard V2 is an independent Flask web application. Auth Service handles registration and password management, while Student Dashboard performs its own credential verification against the shared user database and creates its own session. This database-level integration is separate from the dashboard's Excel, validation, and reporting logic."
+                    data-mm="Student Dashboard V2 သည် သီးခြား Flask web application ဖြစ်ပါတယ်။ Auth Service က registration နှင့် password management ကို ကိုင်တွယ်ပြီး Student Dashboard က shared user database နှင့် credentials များကို ကိုယ်တိုင် စစ်ဆေးကာ ကိုယ်ပိုင် session ကို ဖန်တီးပါတယ်။ ဤ database-level integration သည် dashboard ၏ Excel, validation နှင့် reporting logic များနှင့် သီးခြားဖြစ်ပါတယ်။">
+                    Student Dashboard V2 is an independent Flask web application. Auth Service handles registration and
+                    password management, while Student Dashboard performs its own credential verification against the
+                    shared
+                    user database and creates its own session. This database-level integration is separate from the
+                    dashboard's Excel, validation, and reporting logic.</p><a class="external-link"
                     href="central-authentication-system.html">CENTRAL AUTHENTICATION SERVICE <i
                         class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
