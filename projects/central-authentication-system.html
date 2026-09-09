@@ -41,7 +41,7 @@
                 <h1 class="hero-title" data-en="CENTRAL AUTHENTICATION SERVICE"
                     data-mm="CENTRAL AUTHENTICATION SERVICE">CENTRAL AUTHENTICATION SERVICE</h1>
                 <p class="hero-subtitle"
-                    data-en="A standalone Flask authentication backend backed by PostgreSQL for centralized registration, email OTP verification, password management, login, website access management, and authenticated Flask sessions for multiple web applications."
+                    data-en="A centralized Flask authentication management service backed by PostgreSQL for user registration, email OTP verification, password hashing, password reset, user account management, and authentication-related database tables."
                     data-mm="Website အများအတွက် centralized registration, email OTP verification, password management, login, website access management နှင့် authenticated Flask sessions များကို ပေးသော PostgreSQL အခြေခံ Flask authentication backend တစ်ခုဖြစ်ပါတယ်။">
                     A standalone Flask authentication backend backed by PostgreSQL for centralized registration, email
                     OTP verification, password management, login, website access management, and authenticated Flask
@@ -51,9 +51,8 @@
                         class="metric-pill"><i class="fa-solid fa-envelope"></i> Brevo-compatible Email API</span></div>
                 <div class="card-actions"><a class="btn btn-primary"
                         href="https://student-dashboard-v2.onrender.com/auth/login"><i
-                            class="fa-solid fa-arrow-up-right-from-square"></i><span
-                            data-en="Open Auth-Integrated Login" data-mm="Auth-Integrated Login ဖွင့်ရန်">Open
-                            Auth-Integrated Login</span></a><a class="btn btn-secondary"
+                            class="fa-solid fa-arrow-up-right-from-square"></i><span data-en="Open Auth Login"
+                            data-mm="Auth Login ဖွင့်ရန်">Open Auth Login</span></a><a class="btn btn-secondary"
                         href="../index.html#projects"><i class="fa-solid fa-arrow-left"></i><span
                             data-en="Back to Projects" data-mm="Project များသို့ ပြန်သွားရန်">Back to
                             Projects</span></a></div>
@@ -70,14 +69,17 @@
 
         <section class="reveal">
             <div class="section-title" data-en="Architecture" data-mm="ဖွဲ့စည်းပုံ">Architecture</div>
-            <h2 class="section-heading" data-en="Central authentication data and website access."
-                data-mm="Central authentication data နှင့် website access.">Central authentication data and website
-                access.</h2>
+            <h2 class="section-heading" data-en="Centralized account management and website relationships."
+                data-mm="ဗဟိုပြု account management နှင့် website ဆက်နွယ်မှုများ။">Centralized account management and
+                website relationships.</h2>
             <p class="section-copy"
-                data-en="Auth Service owns central registration, OTP, password management, login, authenticated sessions, website records, and user-to-website access relationships. It is a separate service from Student Dashboard V2."
-                data-mm="Auth Service က central registration, OTP, password management, login, authenticated sessions, website records နှင့် user-to-website access relationships များကို စီမံပါတယ်။ Student Dashboard V2 နှင့် သီးခြား service ဖြစ်ပါတယ်။">
-                Auth Service owns central registration, OTP, password management, login, authenticated sessions, website
-                records, and user-to-website access relationships. It is a separate service from Student Dashboard V2.
+                data-en="Auth Service owns user registration, email OTP verification, password hashing, password reset, user account management, and the authentication-related database tables users, websites, user_websites, and otp_codes. It is a separate project from Student Dashboard V2."
+                data-mm="Auth Service က user registration, email OTP verification, password hashing, password reset, user account management နှင့် users, websites, user_websites, otp_codes database tables များကို စီမံပါတယ်။ Student Dashboard V2 နှင့် သီးခြား project ဖြစ်ပါတယ်။">
+                Auth Service owns user registration, email OTP verification, password hashing, password reset, user
+                account
+                management, and the authentication-related database tables <code>users</code>, <code>websites</code>,
+                <code>user_websites</code>, and <code>otp_codes</code>. It is a separate project from Student Dashboard
+                V2.
             </p>
             <div class="architecture-flow glass-card">
                 <div class="flow-node"><i class="fa-solid fa-globe"></i><strong>Browser</strong></div>
@@ -87,7 +89,8 @@
                 <div class="flow-arrow"><i class="fa-solid fa-arrow-down"></i></div>
                 <div class="flow-node"><i class="fa-solid fa-database"></i><strong>PostgreSQL</strong>
                     <div class="flow-tables">
-                        <code>users</code><code>otp_codes</code><code>websites</code><code>user_websites</code></div>
+                        <code>users</code><code>otp_codes</code><code>websites</code><code>user_websites</code>
+                    </div>
                 </div>
             </div>
         </section>
@@ -129,10 +132,11 @@
                 </article>
                 <article class="feature-card glass-card"><i class="feature-icon fa-solid fa-layer-group"></i>
                     <h3 data-en="My Websites" data-mm="My Websites">My Websites</h3>
-                    <p data-en="Provides the authenticated website directory associated with user_websites and websites."
-                        data-mm="user_websites နှင့် websites တို့နှင့် ဆက်စပ်သော authenticated website directory ကို ပေးပါတယ်။">
-                        Provides the authenticated website directory associated with <code>user_websites</code> and
-                        <code>websites</code>.</p>
+                    <p data-en="Maintains the website directory and user-to-website relationships represented by websites and user_websites."
+                        data-mm="websites နှင့် user_websites တို့ဖြင့် ဖော်ပြထားသော website directory နှင့် user-to-website relationships များကို စီမံပါတယ်။">
+                        Maintains the website directory and user-to-website relationships represented by
+                        <code>websites</code> and <code>user_websites</code>.
+                    </p>
                 </article>
             </div>
         </section>
@@ -179,19 +183,25 @@ EMAIL_FROM_NAME</pre>
 
         <section class="reveal">
             <div class="section-title" data-en="Related Project" data-mm="ဆက်စပ် Project">Related Project</div>
-            <h2 class="section-heading" data-en="A separate application uses the central authentication data."
-                data-mm="သီးခြား application တစ်ခုက central authentication data ကို အသုံးပြုပါတယ်။">A separate
-                application uses the central authentication data.</h2>
+            <h2 class="section-heading" data-en="Student Dashboard V2 remains a separate application."
+                data-mm="Student Dashboard V2 သည် သီးခြား application ဖြစ်ပါတယ်။">Student Dashboard V2 remains a
+                separate application.</h2>
             <div class="website-callout glass-card">
                 <div class="website-callout-icon"><i class="fa-solid fa-link"></i></div>
                 <div>
                     <h3>STUDENT DASHBOARD — VERSION 2</h3>
-                    <p data-en="Student Dashboard V2 is an integrated application, but it remains a separate portfolio project. Its Excel processing, validation, student records, summaries, exports, and dashboard UI are not Auth Service responsibilities."
-                        data-mm="Student Dashboard V2 သည် integrated application ဖြစ်သော်လည်း သီးခြား portfolio project ဖြစ်ပါတယ်။ ၎င်း၏ Excel processing, validation, student records, summaries, exports နှင့် dashboard UI များသည် Auth Service ၏ တာဝန်များ မဟုတ်ပါ။">
-                        Student Dashboard V2 is an integrated application, but it remains a separate portfolio project.
-                        Its Excel processing, validation, student records, summaries, exports, and dashboard UI are not
-                        Auth Service responsibilities.</p><a class="external-link"
-                        href="student-dashboard-v2.html">STUDENT DASHBOARD — VERSION 2 <i
+                    <p data-en="Student Dashboard V2 is an independent Flask web application. The current connection is database-level integration: it verifies credentials using the shared user database and creates its own session. The Auth Service provides a website management structure using websites and user_websites tables. In the current implementation, Student Dashboard access is provided through a configured application link rather than dynamic backend authorization checking. It does not use Auth Service API authorization checking."
+                        data-mm="Student Dashboard V2 သည် သီးခြား Flask web application ဖြစ်ပါတယ်။ လက်ရှိ connection သည် database-level integration ဖြစ်ပြီး shared user database ကို အသုံးပြု၍ credentials များကို စစ်ဆေးကာ ကိုယ်ပိုင် session ကို ဖန်တီးပါတယ်။ Auth Service သည် websites နှင့် user_websites tables များကို အသုံးပြု၍ website management structure ကို ပေးပါတယ်။ လက်ရှိ implementation တွင် Student Dashboard access ကို dynamic backend authorization checking မဟုတ်ဘဲ configured application link မှတစ်ဆင့် ပေးထားပါတယ်။ Auth Service API authorization checking ကို အသုံးမပြုပါ။">
+                        Student Dashboard V2 is an independent Flask web application. The current connection is
+                        database-level
+                        integration: it verifies credentials using the shared user database and creates its own session.
+                        The
+                        Auth Service provides a website management structure using <code>websites</code> and
+                        <code>user_websites</code> tables. In the current implementation, Student Dashboard access is
+                        provided through a configured application link rather than dynamic backend authorization
+                        checking.
+                        It does not use Auth Service API authorization checking.
+                    </p><a class="external-link" href="student-dashboard-v2.html">STUDENT DASHBOARD — VERSION 2 <i
                             class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
